@@ -1,0 +1,7 @@
+Fonte Cabin 
+
+Alterando os pesos da fonte: 
+textos: regular
+titulos: bold
+
+https://fonts.google.com/specimen/Cabin
