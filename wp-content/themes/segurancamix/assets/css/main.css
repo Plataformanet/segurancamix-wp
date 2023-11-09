@@ -69,7 +69,7 @@ main>div:first-child {
     width: 3.2rem;
     height: 3.2rem;
     font-size: 1.4rem;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
     flex: 0 0 auto;
     display: flex;
@@ -113,8 +113,6 @@ main>div:first-child {
     padding: 1rem;
 }
 
-
-
 .banner-image {
     /* position: absolute; */
     width: 100%;
@@ -128,26 +126,142 @@ main>div:first-child {
     margin: 15rem 0 0 0;
 }
 
-.sobre-nos h2, .sobre-nos h3 {
+.sobre-nos h2, .sobre-nos h3, .certificados h3, .produtos h3, .confira-blog h3 {
     font-weight: bold;
 }
 
-.sobre-nos h3 {
+.sobre-nos h3, .certificados h3, .produtos h3, .projetos h3, .nossos-cliente h3, .confira-blog h3 {
     font-weight: bold;
     font-size: 3rem;
     padding: 0 0 1rem 0;
 }
 
-.sobre-nos button {
+.sobre-nos button, .produtos button {
     border: 3px solid #000;
     background: none;
     padding: 0.5rem 0.5rem;
 }
 
-.sobre-nos button a {
+.sobre-nos button a, .produtos button a {
     color: #000;
 }
 
+.certificados {
+    padding: 1rem 1rem;
+    background-color: #000;
+}
+
+.certificados h2, .certificados h3, .certificados p {
+    color: #fff;
+}
+
+.certificados button {
+    border: 3px solid #fff;
+    background: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.certificados button a {
+    color: #fff;
+}
+
+.produtos, .projetos, .nossos-cliente, .confira-blog {
+    margin: 10rem 0 0 0;
+}
+
+.carrousel-projetos {
+    background-color: #3f3e3e;
+    padding: 3rem 1rem;
+}
+
+.carrousel-projetos h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.projetos_comerciais {
+    background: #666666;
+}
+
+.projetos_residenciais {
+    background: #7e7d7d;
+}
+
+.projetos_comerciais, .projetos_residenciais {
+    margin: 5rem 0 5rem 0;
+    min-height: 35rem;
+}
+
+.projetos p {
+    padding: 0 0 3rem 0;
+}
+
+.btn-carrousel_projetos {
+    width: 10%;
+    margin: auto;
+    border: 3px solid #fff;
+    background: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.btn-configura_blog {
+    width: 15%;
+    margin: auto;
+    border: 3px solid #000;
+    background: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.btn-carrousel_projetos a {
+    color: #fff;
+}
+
+.btn-configura_blog a {
+    color: #000;
+}
+
+.home-fale_conosco {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    margin: 5rem 0 0 0;
+    padding: 2rem;
+    gap: 52rem;
+}
+
+.home-fale_conosco p {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.home-fale_conosco button {
+    border: 3px solid #fff;
+    background: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.home-fale_conosco button a {
+    color: #fff;
+}
+
+.info-rodape {
+    background-color: #3f3e3e;
+    padding: 2rem;
+}
+
+.footer__copyright {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+.politica-privacidade {
+    position: absolute;
+    right: 0;
+}
 
 .fixed-whatsapp {
     width: 5rem;
