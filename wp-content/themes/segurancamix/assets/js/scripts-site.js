@@ -53,14 +53,14 @@ $(function () {
     },
   });
 
-  $(".home-products__carousel .owl-carousel").owlCarousel({
+  $(".home-certificados__carousel.owl-carousel").owlCarousel({
     dots: false,
     nav: true,
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",
     ],
-    loop: true,
+    loop: false,
     margin: 40,
     autoplay: false,
     autoplayTimeout: 7000,
@@ -76,7 +76,35 @@ $(function () {
         items: 1.5,
       },
       992: {
-        items: 2.5,
+        items: 3,
+      },
+    },
+  });
+
+  $(".home-produtos__carousel.owl-carousel").owlCarousel({
+    dots: false,
+    nav: true,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
+    loop: false,
+    margin: 0,
+    autoplay: false,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 1.5,
+      },
+      992: {
+        items: 4,
       },
     },
   });

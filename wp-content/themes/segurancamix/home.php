@@ -62,7 +62,37 @@ get_header();
                     <a href="http://">VER TODOS</a>
                 </button>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="home-certificados__carousel owl-carousel owl-theme">
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                    <a href="" class="certificados-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -80,7 +110,82 @@ get_header();
                     <a href="http://">SAIBA MAIS</a>
                 </button>
             </div>
-            <div class="col-md-8"></div>
+            <div class="col-md-8">
+                <div class="home-produtos__carousel owl-carousel owl-theme">
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-porta-blindada.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Porta-Blindada.png" alt="Segurança Mix">
+                            <h2>Porta blindada</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-vidro-blindado.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Vidro-Blindado.png" alt="Segurança Mix">
+                            <h2>Vidro blindado</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-fechadura.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Fechadura.png" alt="Segurança Mix">
+                            <h2>Fechadura de segurança</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-guarita.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Guarita.png" alt="Segurança Mix">
+                            <h2>Guarita blindada</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-porta-blindada.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Porta-Blindada.png" alt="Segurança Mix">
+                            <h2>Porta blindada</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-vidro-blindado.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Vidro-Blindado.png" alt="Segurança Mix">
+                            <h2>Vidro blindado</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-fechadura.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Fechadura.png" alt="Segurança Mix">
+                            <h2>Fechadura de segurança</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                    <a href="" class="produtos-item">
+                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-guarita.png" alt="Segurança Mix">
+                        <div class="conteudo-produto">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Guarita.png" alt="Segurança Mix">
+                            <h2>Guarita blindada</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
+                            <button>SAIBA MAIS</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -107,7 +212,7 @@ get_header();
                     <h2>Projetos comerciais</h2>
                 </div>
                 <button class="btn-carrousel_projetos">
-                    <a href="http://">SAIBA MAIS</a>
+                    <a href="http://">VER TODOS</a>
                 </button>
             </div>
         </div>
