@@ -41,6 +41,7 @@ main>div:first-child {
     background-color: #000;
     overflow: hidden;
     transition: all 0.2s;
+    padding: 0.5rem;
 }
 
 .header-contact__content {
@@ -93,6 +94,10 @@ main>div:first-child {
     padding: 1.5rem 0 1.5rem 0;
 }
 
+.header-nav {
+    margin: 0 0 3rem 0;
+}
+
 .header-nav__list {
     list-style: none;
     margin: 0;
@@ -111,6 +116,48 @@ main>div:first-child {
     padding: 3rem 1.2rem;
     transition: all 0.2s;
     padding: 1rem;
+}
+
+.header-nav__list li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 0.4rem;
+    background-color: #000;
+    transition: all 0.4s ease-in-out;
+}
+
+.header-nav__list li a:hover {
+    font-weight: 500;
+}
+
+.header-nav__list li a:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.header-nav__list li.current-menu-item a {
+    font-weight: 500;
+}
+
+.header-nav__list li.current-menu-item a::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.header-nav__list .menu-item-32 {
+    background-color: #000;
+    border-radius: 0.6rem;
+}
+
+.header-nav__list .menu-item-32 a {
+    color: #fff;
+    font-weight: 500;
 }
 
 .banner-image {
@@ -504,6 +551,253 @@ main>div:first-child {
     .home-produtos__carousel.owl-carousel .owl-nav .owl-next {
         right: -1rem;
     }
+}
+
+.projetos__carousel.owl-carousel {
+    position: relative;
+    left: 16rem;
+}
+
+.projetos__carousel.owl-carousel .owl-stage-outer {}
+
+@media (max-width: 1199px) {
+    .projetos__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .projetos__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+/* .projetos__carousel.owl-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    transform: translate(100%);
+    width: 100rem;
+    height: 100%;
+    background: linear-gradient(to left, #fff, 95%, transparent);
+    opacity: 0.8;
+    z-index: 1;
+} */
+
+
+.projetos__carousel.owl-carousel .owl-nav .owl-prev,
+.projetos__carousel.owl-carousel .owl-nav .owl-next {
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: #003366; */
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+
+.projetos__carousel.owl-carousel .owl-nav .owl-prev {
+    left: -5rem;
+}
+
+@media (max-width: 1199px) {
+    .projetos__carousel.owl-carousel .owl-nav .owl-prev {
+        left: -1rem;
+    }
+}
+
+.projetos__carousel.owl-carousel .owl-nav .owl-next {
+    right: -5rem;
+}
+
+@media (max-width: 1199px) {
+    .projetos__carousel.owl-carousel .owl-nav .owl-next {
+        right: -1rem;
+    }
+}
+
+.projetos-item p {
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0 0 0;
+}
+
+
+
+.nossos-clientes__carousel.owl-carousel {
+    position: relative;
+}
+
+.nossos-clientes__carousel.owl-carousel .owl-stage-outer {}
+
+@media (max-width: 1199px) {
+    .nossos-clientes__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .nossos-clientes__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+/* .nossos-clientes__carousel.owl-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    transform: translate(100%);
+    width: 100rem;
+    height: 100%;
+    background: linear-gradient(to left, #fff, 95%, transparent);
+    opacity: 0.8;
+    z-index: 1;
+} */
+
+
+.nossos-clientes__carousel.owl-carousel .owl-nav .owl-prev,
+.nossos-clientes__carousel.owl-carousel .owl-nav .owl-next {
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: #003366; */
+    color: #000;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+
+.nossos-clientes__carousel.owl-carousel .owl-nav .owl-prev {
+    left: -5rem;
+}
+
+@media (max-width: 1199px) {
+    .nossos-clientes__carousel.owl-carousel .owl-nav .owl-prev {
+        left: -1rem;
+    }
+}
+
+.nossos-clientes__carousel.owl-carousel .owl-nav .owl-next {
+    right: -1rem;
+}
+
+@media (max-width: 1199px) {
+    .nossos-clientes__carousel.owl-carousel .owl-nav .owl-next {
+        right: -1rem;
+    }
+}
+
+.clientes-item img {
+    width: 70% !important;
+}
+
+
+.home-blog__carousel.owl-carousel {
+    position: relative;
+    margin: 0 0 5rem 0;
+}
+
+.home-blog__carousel.owl-carousel .owl-stage-outer {}
+
+@media (max-width: 1199px) {
+    .home-blog__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-blog__carousel.owl-carousel {
+        padding: 0 4rem;
+    }
+}
+
+/* .home-blog__carousel.owl-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    transform: translate(100%);
+    width: 100rem;
+    height: 100%;
+    background: linear-gradient(to left, #fff, 95%, transparent);
+    opacity: 0.8;
+    z-index: 1;
+} */
+
+
+.home-blog__carousel.owl-carousel .owl-nav .owl-prev,
+.home-blog__carousel.owl-carousel .owl-nav .owl-next {
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: #003366; */
+    color: #000;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+
+.home-blog__carousel.owl-carousel .owl-nav .owl-prev {
+    left: -5rem;
+}
+
+@media (max-width: 1199px) {
+    .home-blog__carousel.owl-carousel .owl-nav .owl-prev {
+        left: -1rem;
+    }
+}
+
+.home-blog__carousel.owl-carousel .owl-nav .owl-next {
+    right: -5rem;
+}
+
+@media (max-width: 1199px) {
+    .home-blog__carousel.owl-carousel .owl-nav .owl-next {
+        right: -1rem;
+    }
+}
+
+.home-blog__carousel.owl-carousel .owl-item {
+    border: 1px solid #ccc !important;
+    padding: 1rem;
+}
+
+.home-blog__carousel.owl-carousel h2 {
+    font-weight: bold;
+    font-size: 2.0rem;
+    padding: 1rem 0;
+}
+
+.home-blog__carousel.owl-carousel p {
+    font-size: 1.5rem;
+}
+
+.home-blog__carousel.owl-carousel h2, .home-blog__carousel.owl-carousel p {
+    color: #000;
+}
+
+.home-blog__carousel.owl-carousel button {
+    display: block;
+    margin: auto;
+    border: 2px solid #000;
+    background: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
 }
 
 .fixed-whatsapp {

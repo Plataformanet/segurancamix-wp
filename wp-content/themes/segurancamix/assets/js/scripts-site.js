@@ -109,6 +109,90 @@ $(function () {
     },
   });
 
+  $(".projetos__carousel.owl-carousel").owlCarousel({
+    dots: false,
+    nav: true,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
+    loop: false,
+    margin: 0,
+    autoplay: false,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 1.5,
+      },
+      992: {
+        items: 1,
+      },
+    },
+  });
+
+  $(".nossos-clientes__carousel.owl-carousel").owlCarousel({
+    dots: false,
+    nav: true,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
+    loop: false,
+    margin: 80,
+    autoplay: false,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 1.5,
+      },
+      992: {
+        items: 5,
+      },
+    },
+  });
+
+  $(".home-blog__carousel.owl-carousel").owlCarousel({
+    dots: false,
+    nav: true,
+    navText: [
+      "<i class='fas fa-chevron-left'></i>",
+      "<i class='fas fa-chevron-right'></i>",
+    ],
+    loop: false,
+    margin: 8,
+    autoplay: false,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 1.5,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
+
   $(".products-categories .owl-carousel").owlCarousel({
     dots: false,
     nav: true,
