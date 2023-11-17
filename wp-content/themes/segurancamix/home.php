@@ -58,7 +58,7 @@ get_header();
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
                 </p>
-                <button class="btn-sobre_nos">
+                <button class="btn-certificados">
                     <a href="http://">VER TODOS</a>
                 </button>
             </div>
@@ -66,12 +66,21 @@ get_header();
                 <div class="home-certificados__carousel owl-carousel owl-theme">
                     <a href="" class="certificados-item">
                         <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                        <div class="wrapper-btn">
+                            <button>SAIBA MAIS</button>
+                        </div>
                     </a>
                     <a href="" class="certificados-item">
                         <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                        <div class="wrapper-btn">
+                            <button>SAIBA MAIS</button>
+                        </div>
                     </a>
                     <a href="" class="certificados-item">
                         <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
+                        <div class="wrapper-btn">
+                            <button>SAIBA MAIS</button>
+                        </div>
                     </a>
                     <a href="" class="certificados-item">
                         <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
@@ -148,42 +157,6 @@ get_header();
                             <button>SAIBA MAIS</button>
                         </div>
                     </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-porta-blindada.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Porta-Blindada.png" alt="Segurança Mix">
-                            <h2>Porta blindada</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-vidro-blindado.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Vidro-Blindado.png" alt="Segurança Mix">
-                            <h2>Vidro blindado</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-fechadura.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Fechadura.png" alt="Segurança Mix">
-                            <h2>Fechadura de segurança</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-guarita.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Guarita.png" alt="Segurança Mix">
-                            <h2>Guarita blindada</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -207,45 +180,53 @@ get_header();
             <div class="row">
                 <div class="col-md-6 projetos_comerciais">
                     <h2>Projetos residenciais</h2>
-                    <div class="col-md-6">
-                        <div class="projetos__carousel owl-carousel owl-theme">
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2023</p>
-                            </a>
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2024</p>
-                            </a>
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2023</p>
-                            </a>
-                        </div>
+                    <div class="projetos__carousel owl-carousel owl-theme">
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2023</p>
+                            <div class="wrapper-btn">
+                                <!-- <button>SAIBA MAIS</button> -->
+                            </div>
+                        </a>
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2024</p>
+                            <div class="wrapper-btn">
+                                <!-- <button>SAIBA MAIS</button> -->
+                            </div>
+                        </a>
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2023</p>
+                            <div class="wrapper-btn">
+                                <!-- <button>SAIBA MAIS</button> -->
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 projetos_residenciais">
                     <h2>Projetos comerciais</h2>
-                    <div class="col-md-6">
-                        <div class="projetos__carousel owl-carousel owl-theme">
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2023</p>
-                            </a>
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2023</p>
-                            </a>
-                            <a href="" class="projetos-item">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                                <p>Projeto Lorem ipsum - 2023</p>
-                            </a>
-                        </div>
+                    <div class="projetos__carousel owl-carousel owl-theme">
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2023</p>
+                            <div class="wrapper-btn">
+                                <!-- <button>SAIBA MAIS</button> -->
+                            </div>
+                        </a>
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2023</p>
+                        </a>
+                        <a href="" class="projetos-item">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
+                            <p>Projeto Lorem ipsum - 2023</p>
+                        </a>
                     </div>
                 </div>
-                <button class="btn-carrousel_projetos">
+                <!-- <button class="btn-carrousel_projetos">
                     <a href="http://">VER TODOS</a>
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
@@ -263,31 +244,20 @@ get_header();
                 <div class="col-md-12">
                     <div class="nossos-clientes__carousel owl-carousel owl-theme">
                         <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
                         </a>
                         <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
                         </a>
                         <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
                         </a>
                         <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
                         </a>
                         <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
+                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
                         </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-PB.png" alt="Clientes">
                         </a>
                     </div>
                 </div>
@@ -311,32 +281,26 @@ get_header();
                             <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
                             <h2>Normas que a empresa deve seguir</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button>SAIBA MAIS</button>
+                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
                         </a>
                         <a href="" class="blog-item">
                             <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
                             <h2>Normas que a empresa deve seguir</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button>SAIBA MAIS</button>
+                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
                         </a>
                         <a href="" class="blog-item">
                             <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix">
                             <h2>Normas que a empresa deve seguir</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button>SAIBA MAIS</button>
-                        </a>
-                        <a href="" class="blog-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix">
-                            <h2>Normas que a empresa deve seguir</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button>SAIBA MAIS</button>
+                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <button class="btn-configura_blog">
+            <!-- <button class="btn-configura_blog">
                 <a href="http://">ACESSAR BLOG</a>
-            </button>
+            </button> -->
         </div>
     </div>
 </section>

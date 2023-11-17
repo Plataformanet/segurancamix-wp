@@ -62,7 +62,7 @@ $(function () {
     ],
     loop: false,
     margin: 40,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 7000,
     autoplayHoverPause: true,
     responsive: {
@@ -83,7 +83,7 @@ $(function () {
 
   $(".home-produtos__carousel.owl-carousel").owlCarousel({
     dots: false,
-    nav: true,
+    nav: false,
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",
@@ -111,7 +111,7 @@ $(function () {
 
   $(".projetos__carousel.owl-carousel").owlCarousel({
     dots: false,
-    nav: true,
+    nav: false,
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",
@@ -139,7 +139,7 @@ $(function () {
 
   $(".nossos-clientes__carousel.owl-carousel").owlCarousel({
     dots: false,
-    nav: true,
+    nav: false,
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",
@@ -167,7 +167,7 @@ $(function () {
 
   $(".home-blog__carousel.owl-carousel").owlCarousel({
     dots: false,
-    nav: true,
+    nav: false,
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",

@@ -1,7 +1,7 @@
 <footer>
     <section class="home-fale_conosco">
         <p>Fale conosco, solicite orçamento.</p>
-        <button>
+        <button class="home-btn__solicitar_orcamento">
             <a href="http://">SOLICITAR ORÇAMENTO</a>
         </button>
     </section>
@@ -64,7 +64,7 @@
     </section>
     <div class="footer__copyright">
         <div class="container position-relative">
-            <span>© Plataformanet 2023 - Todos os direitos reservados</span>
+            <span>© Plataformanet <?php echo Date('Y') ?> - Todos os direitos reservados</span>
             <span class="politica-privacidade">Política de privacidade</span>
         </div>
     </div>

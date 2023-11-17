@@ -43,31 +43,111 @@
                 </div>
             </div>
         </div>
-        <div class="header-main">
-            <div class="row">
-                <div class="container">
-                    <div class="logo-topo">
-                        <a href="<? bloginfo('url'); ?>" title="Segurança Mix">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/logo.png" alt="Segurança Mix">
-                        </a>
+        <div class="col-md-12">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="header-main">
+                            <div class="container">
+                                <div class="logo-topo">
+                                    <a href="<? bloginfo('url'); ?>" title="Segurança Mix">
+                                        <img src="<? bloginfo('template_url') ?>/assets/images/logo.png" alt="Segurança Mix">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-9 nav_menu_principal">
+                        <ul class="header-nav__list main-nav__list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Sobre nós</a></li>
+                            <li>
+                                <a href="">Produtos</a>
+                                <div class="megamenu">
+                                    <div class="megamenu-categories">
+                                        <span class="megamenu-categories__title">Categorias</span>
+                                        <ul class="megamenu-categories__list">
+                                            <li>
+                                                <a href="#">Fechadura digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Vidros</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Portas</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Passa-volumes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta documentos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Intercomunicador</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blindagem de alvenaria</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="megamenu-subcategories">
+                                        <span class="megamenu-subcategories__title">Categorias</span>
+                                        <ul class="megamenu-subcategories__list">
+                                            <li>
+                                                <a href="#">Fechadura digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Vidros</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Portas</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Passa-volumes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta documentos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Intercomunicador</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blindagem de alvenaria</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li><a href="">Showroom</a></li>
+                            <li><a href="">Projetos</a></li>
+                            <li><a href="">Trabalhe Conosco</a></li>
+                            <li><a href="">Clientes</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contato</a></li>
+                            <li><a href="">Orçamento</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- 
+                        <div class="row nav_menu_principal">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <? wp_nav_menu(
+                                        array(
+                                            'theme_location' => 'my_main_menu',
+                                            'container' => 'nav',
+                                            'container_class' => 'header-nav',
+                                            'menu_class' => 'header-nav__list'
+                                        )
+                                    );
+                                    ?>
+                                </div>
+                            </div>
+                        </div> -->
                 </div>
             </div>
         </div>
-        <div class="row nav_menu_principal">
-            <div class="container">
-                <div class="col-md-12">
-                    <? wp_nav_menu(
-                        array(
-                            'theme_location' => 'my_main_menu',
-                            'container' => 'nav',
-                            'container_class' => 'header-nav',
-                            'menu_class' => 'header-nav__list'
-                        )
-                    );
-                    ?>
-                </div>
-            </div>
         </div>
     </header>
 
