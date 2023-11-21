@@ -58,66 +58,51 @@
                         </div>
                     </div>
                     <div class="col-md-9 nav_menu_principal">
-                        <ul class="header-nav__list main-nav__list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Sobre nós</a></li>
-                            <li>
-                                <a href="">Produtos</a>
+                        <ul class="header-nav__list main-nav__list" id="menu_list">
+                            <li><a href="<?php echo get_home_url(); ?>">Home</a></li>
+                            <li><a href="<?php echo get_page_link(10); ?>">Sobre nós</a></li>
+                            <li id="produtos">
+                                <a href="<?php echo get_page_link(12); ?>">Produtos</a>
                                 <div class="megamenu">
                                     <div class="megamenu-categories">
                                         <span class="megamenu-categories__title">Categorias</span>
-                                        <ul class="megamenu-categories__list">
-                                            <li>
+                                        <ul class="megamenu-categories__list" id="list_cat">
+                                            <li id="link-menu-0">
                                                 <a href="#">Fechadura digital</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-1">
                                                 <a href="#">Vidros</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-2">
                                                 <a href="#">Portas</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-3">
                                                 <a href="#">Passa-volumes</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-4">
                                                 <a href="#">Porta documentos</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-5">
                                                 <a href="#">Intercomunicador</a>
                                             </li>
-                                            <li>
+                                            <li id="link-menu-6">
                                                 <a href="#">Blindagem de alvenaria</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="megamenu-subcategories">
-                                        <span class="megamenu-subcategories__title">Categorias</span>
+                                    <div class="megamenu-subcategories" id="menu-0" style="display: none">
+                                        <span class="megamenu-subcategories__title">Subcategorias</span>
                                         <ul class="megamenu-subcategories__list">
                                             <li>
-                                                <a href="#">Fechadura digital</a>
+                                                <a href="#">Porta blindada</a>
                                             </li>
                                             <li>
-                                                <a href="#">Vidros</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Portas</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Passa-volumes</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta documentos</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Intercomunicador</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Blindagem de alvenaria</a>
+                                                <a href="#">Porta Antiarrombamento</a>
                                             </li>
                                         </ul>
                                     </div>
                             </li>
-                            <li><a href="">Showroom</a></li>
+                            <li><a href="<?php echo get_page_link(14); ?>">Showroom</a></li>
                             <li><a href="">Projetos</a></li>
                             <li><a href="">Trabalhe Conosco</a></li>
                             <li><a href="">Clientes</a></li>

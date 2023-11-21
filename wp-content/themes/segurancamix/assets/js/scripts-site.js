@@ -377,3 +377,19 @@ $(function () {
 
   $(".lb-prev, .lb-next, .lb-close, .lb-cancel").attr({ href: "#" });
 });
+
+const ul = document.querySelectorAll('#menu_list > li');
+
+ul.forEach((item) => {
+  const li = item.querySelectorAll('#list_cat > li');
+  li.forEach((item, key) => {
+    //  const li_links = document.que(`link-menu-${key}`);
+    item.addEventListener('mouseover', () => {
+       console.log(`menu-${key}`);
+           document.getElementById(`menu-${key}`).id = `menu-${key}`;
+          //  console.log(key);
+           // const link = document.querySelector(`#menu-${key}`);
+          // link.style = "display: block";   
+       });
+  });
+});

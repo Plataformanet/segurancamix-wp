@@ -24,7 +24,7 @@ get_header();
     ?>
 </section>
 
-<section class="sobre-nos">
+<section class="home-sobre__nos">
     <div class="container">
         <div class="col-md-12">
             <div class="row">
