@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="sobre-nos">
+<section class="sobre-nos title">
     <section class="valores"></section>
     <div class="container">
         <div class="col-md-12">
@@ -37,7 +37,7 @@ get_header();
     </div>
 </section>
 
-<section class="certificados">
+<section class="certificados title">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -94,7 +94,7 @@ get_header();
     </div>
 </section>
 
-<section class="nossos-cliente">
+<section class="nossos-cliente title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

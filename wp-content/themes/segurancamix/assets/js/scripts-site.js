@@ -328,24 +328,24 @@ $(function () {
 
   // Header Nav Link padding adjustment
 
-  const headerNavLinks = document.querySelectorAll(".header-nav__list li a");
-  $(window).on("scroll", function () {
-    if (window.matchMedia("min-width: 992px")) {
-      if (window.scrollY > 0) {
-        headerNavLinks.forEach((item) => {
-          item.style.padding = "2.4rem 1.2rem";
-        });
-      } else {
-        headerNavLinks.forEach((item) => {
-          item.style.padding = "";
-        });
-      }
-    } else {
-      headerNavLinks.forEach((item) => {
-        item.style.padding = "";
-      });
-    }
-  });
+  // const headerNavLinks = document.querySelectorAll(".header-nav__list li a");
+  // $(window).on("scroll", function () {
+  //   if (window.matchMedia("min-width: 992px")) {
+  //     if (window.scrollY > 0) {
+  //       headerNavLinks.forEach((item) => {
+  //         item.style.padding = "2.4rem 1.2rem";
+  //       });
+  //     } else {
+  //       headerNavLinks.forEach((item) => {
+  //         item.style.padding = "";
+  //       });
+  //     }
+  //   } else {
+  //     headerNavLinks.forEach((item) => {
+  //       item.style.padding = "";
+  //     });
+  //   }
+  // });
 
   // Send Product Name to quote form from request button
 

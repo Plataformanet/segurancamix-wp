@@ -138,7 +138,7 @@ header {
     position: relative;
     color: #000;
     font-size: 1.6rem;
-    padding: 3rem 1.2rem;
+    padding: 0 1.2rem;
     transition: all 0.2s;
 }
 
@@ -174,12 +174,13 @@ header {
     left: 0;
 }
 
-.header-nav__list .menu-item-32 {
+.header-nav__list li:last-child {
     background-color: #000;
     border-radius: 0.6rem;
+    padding: 0.5rem 0;
 }
 
-.header-nav__list .menu-item-32 a {
+.header-nav__list li:last-child a {
     color: #fff;
     font-weight: 500;
 }
@@ -355,13 +356,7 @@ header {
     padding: 5rem 0 0 0;
 }
 
-.home-sobre__nos h2,
-.sobre-nos h2,
-.produtos h2,
-.projetos h2,
-.nossos-cliente h2,
-.confira-blog h2,
-.showroom h2 {
+.title h2 {
     color: #c4c4c4;
 }
 
@@ -369,44 +364,16 @@ header {
     color: #292929;
 }
 
-.home-sobre__nos h2,
-.home-sobre__nos h3,
-.sobre-nos h2,
-.sobre-nos h3,
-.certificados h2,
-.certificados h3,
-.produtos h2,
-.produtos h3,
-.projetos h2,
-.projetos h3,
-.nossos-cliente h2,
-.nossos-cliente h3,
-.confira-blog h2,
-.confira-blog h3,
-.showroom h2,
-.showroom h3 {
+.title h2,
+.title h3 {
     font-weight: bold;
 }
 
-.home-sobre__nos h2,
-.sobre-nos h2,
-.certificados h2,
-.produtos h2,
-.projetos h2,
-.nossos-cliente h2,
-.confira-blog h2,
-.showroom h2 {
+.title h2 {
     font-size: 2.5rem;
 }
 
-.home-sobre__nos h3,
-.sobre-nos h3,
-.certificados h3,
-.produtos h3,
-.projetos h3,
-.nossos-cliente h3,
-.confira-blog h3,
-.showroom h3 {
+.title h3 {
     font-size: 3.0rem;
     padding: 0 0 1rem 0;
 }
@@ -886,14 +853,6 @@ header {
     display: block;
 }
 
-.wrapper-btn button {
-    color: #fff;
-}
-
-.wrapper-btn {
-    display: none;
-}
-
 .nossos-clientes__carousel.owl-carousel {
     position: relative;
 }
@@ -1169,6 +1128,184 @@ header {
     color: #000;
 }
 
+.lista-projetos {
+    background-color: #303030;
+    padding: 1rem;
+}
+
+.btn-projetos {
+    display: flex;
+    margin: 2rem 0 3rem 0;
+}
+
+.btn-projetos a {
+    color: #fff;
+}
+
+.btn-projetos-residenciais, .btn-projetos-comerciais {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn-projetos-residenciais {
+    background-color: #343434;
+}
+
+.btn-projetos-comerciais {
+    background-color: #757575;
+}
+
+.bloco-projetos .projetos-item {
+    position: relative;
+}
+
+.bloco-projetos .projetos-item:hover .wrapper-btn {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    display: block;
+}
+
+.bloco-projetos .projetos-item img {
+    width: 100%;
+}
+
+.bloco-projetos h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+.clientes, .blog, .contato {
+    margin: 5rem 0 0 0;
+}
+
+.lista-clientes {
+    margin: 3rem 0 0 0;
+}
+
+.lista-clientes .bloco-clientes {
+    margin: 0 0 5rem 0;
+}
+
+.lista-blog .blog-item {
+    border: 1px solid #ccc !important;
+    padding: 1rem;
+    margin: 2rem 0 5rem 0;
+}
+
+.lista-blog h2 {
+    font-weight: bold;
+    font-size: 2.0rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.lista-blog p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.lista-blog h2, .lista-blog p {
+    color: #000;
+}
+
+.lista-blog img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.lista-blog button {
+    display: block;
+    margin: auto;
+    border: 2px solid #000;
+    background: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+#home-blog_carousel__btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit] {
+    display: block;
+    margin: auto !important;
+    background: none !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    padding: 0.3rem 1.5rem !important;
+
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+    display: block;
+    margin: auto !important;
+    background: #fff !important;
+    color: #000 !important;
+    padding: 0.3rem 1.5rem !important;
+}
+
+div.wpforms-container-full input[type=text], div.wpforms-container-full input[type=email], input[type=tel], div.wpforms-container-full .wpforms-form textarea {
+    background-color: #f4f4f4 !important;
+    border: none !important;
+}
+
+.mapa {
+    margin: 2rem 0 0 0;
+}
+
+.info-contact {
+    margin: 3rem 0 3rem 0;
+}
+
+.info-contact__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.4rem 0;
+    flex-wrap: wrap;
+}
+
+.info-contact__item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #000;
+}
+
+.info-contact__content .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-contact__content .icon:hover {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .fixed-whatsapp {
     width: 5rem;
     height: 5rem;
@@ -1206,4 +1343,8 @@ header {
 
 .fixed-whatsapp:hover {
     transform: scale(1.2);
+}
+
+footer {
+    margin: 10rem 0 0 0;
 }

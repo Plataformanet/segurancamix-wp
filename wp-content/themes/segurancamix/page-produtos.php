@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="produtos">
+<section class="produtos title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

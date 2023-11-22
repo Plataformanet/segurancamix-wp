@@ -24,7 +24,7 @@ get_header();
     ?>
 </section>
 
-<section class="home-sobre__nos">
+<section class="home-sobre__nos title">
     <div class="container">
         <div class="col-md-12">
             <div class="row">
@@ -49,7 +49,7 @@ get_header();
     </div>
 </section>
 
-<section class="certificados">
+<section class="certificados title">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -106,7 +106,7 @@ get_header();
     </div>
 </section>
 
-<section class="produtos">
+<section class="produtos title">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -163,7 +163,7 @@ get_header();
     </div>
 </section>
 
-<section class="projetos">
+<section class="projetos title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -232,7 +232,7 @@ get_header();
     </div>
 </section>
 
-<section class="nossos-cliente">
+<section class="nossos-cliente title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -266,7 +266,7 @@ get_header();
     </div>
 </section>
 
-<section class="confira-blog">
+<section class="confira-blog title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

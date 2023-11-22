@@ -48,12 +48,10 @@
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <div class="header-main">
-                            <div class="container">
-                                <div class="logo-topo">
-                                    <a href="<? bloginfo('url'); ?>" title="Segurança Mix">
-                                        <img src="<? bloginfo('template_url') ?>/assets/images/logo.png" alt="Segurança Mix">
-                                    </a>
-                                </div>
+                            <div class="logo-topo">
+                                <a href="<? bloginfo('url'); ?>" title="Segurança Mix">
+                                    <img src="<? bloginfo('template_url') ?>/assets/images/logo.png" alt="Segurança Mix">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -103,11 +101,11 @@
                                     </div>
                             </li>
                             <li><a href="<?php echo get_page_link(14); ?>">Showroom</a></li>
-                            <li><a href="">Projetos</a></li>
+                            <li><a href="<?php echo get_page_link(16); ?>">Projetos</a></li>
                             <li><a href="">Trabalhe Conosco</a></li>
-                            <li><a href="">Clientes</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contato</a></li>
+                            <li><a href="<?php echo get_page_link(20); ?>">Clientes</a></li>
+                            <li><a href="<?php echo get_page_link(22); ?>">Blog</a></li>
+                            <li><a href="<?php echo get_page_link(24); ?>">Contato</a></li>
                             <li><a href="">Orçamento</a></li>
                         </ul>
 
