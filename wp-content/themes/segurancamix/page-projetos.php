@@ -34,7 +34,7 @@ get_header();
                     <div class="row">
                         <h2>Projetos comerciais</h2>
                         <div class="col-md-4 mb-5">
-                            <a href="" class="projetos-item">
+                            <a href="http://localhost/segurancamix/projeto-selecionado/" class="projetos-item">
                                 <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
                                 <p>Projeto Lorem ipsum - 2023</p>
                                 <div class="wrapper-btn">

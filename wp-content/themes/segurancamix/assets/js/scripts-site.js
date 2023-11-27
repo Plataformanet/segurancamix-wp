@@ -383,13 +383,23 @@ const ul = document.querySelectorAll('#menu_list > li');
 ul.forEach((item) => {
   const li = item.querySelectorAll('#list_cat > li');
   li.forEach((item, key) => {
-    //  const li_links = document.que(`link-menu-${key}`);
-    item.addEventListener('mouseover', () => {
-       console.log(`menu-${key}`);
-           document.getElementById(`menu-${key}`).id = `menu-${key}`;
-          //  console.log(key);
-           // const link = document.querySelector(`#menu-${key}`);
-          // link.style = "display: block";   
+    // let = mouseIsOver = false;
+    const li_links = document.getElementById(`link-menu-${key}`);
+    li_links.addEventListener('mouseover', (e) => {
+          // mouseIsOver = true;
+          const getKey = document.getElementById(`menu-${key}`).dataset.key;
+          console.log(e);
+          document.getElementById(`menu-${key}`).className = `megamenu-subcategories menu-${key}`;
+          // document.getElementsByClassName(`menu-${key}`).style = 'display: block';
+          // link.style = "display: block"; 
+          if(getKey == key){
+            $(`.menu-${key}`).css('display','block');
+            console.log('Entrou no If');
+          }else{
+            $(`.menu-${key}`).css('display','none');
+            console.log('Entrou no Else');
+          }  
        });
+       $(`.menu-${key}`).css('display','none');  
   });
 });

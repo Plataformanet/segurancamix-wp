@@ -180,21 +180,7 @@ get_header();
             <div class="row">
                 <div class="col-md-6 projetos_comerciais">
                     <h2>Projetos residenciais</h2>
-                    <div class="projetos__carousel owl-carousel owl-theme">
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2023</p>
-                            <div class="wrapper-btn">
-                                <!-- <button>SAIBA MAIS</button> -->
-                            </div>
-                        </a>
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2024</p>
-                            <div class="wrapper-btn">
-                                <!-- <button>SAIBA MAIS</button> -->
-                            </div>
-                        </a>
+                    <div class="projetos__carousel">
                         <a href="" class="projetos-item">
                             <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
                             <p>Projeto Lorem ipsum - 2023</p>
@@ -206,21 +192,13 @@ get_header();
                 </div>
                 <div class="col-md-6 projetos_residenciais">
                     <h2>Projetos comerciais</h2>
-                    <div class="projetos__carousel owl-carousel owl-theme">
+                    <div class="projetos__carousel">
                         <a href="" class="projetos-item">
                             <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
                             <p>Projeto Lorem ipsum - 2023</p>
                             <div class="wrapper-btn">
                                 <!-- <button>SAIBA MAIS</button> -->
                             </div>
-                        </a>
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2023</p>
-                        </a>
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2023</p>
                         </a>
                     </div>
                 </div>

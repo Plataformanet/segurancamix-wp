@@ -17,7 +17,7 @@ get_header();
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3 produtos-item">
-                            <a href="http://">
+                            <a href="http://localhost/segurancamix/produto-selecionado/">
                                 <img src="<? bloginfo('template_url') ?>/assets/images/produto-porta-blindada.png" alt="Segurança Mix">
                                 <div class="conteudo-produto">
                                     <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Porta-Blindada.png" alt="Segurança Mix">

@@ -12,23 +12,23 @@
                     <img src="<? bloginfo('template_url') ?>/assets/images/logotipo-rodape.png" alt="Segurança Mix">
                 </div>
                 <div class="col-md-3">
-                    <div class="header-contact__content">
-                        <a href="tel:1145911709" class="header-contact__item" target="_blank" rel="noopener">
-                            <i class="header-contact__icon icon fas fa-phone"></i>
+                    <div class="footer-contact__content">
+                        <a href="tel:1145911709" class="footer-contact__item" target="_blank" rel="noopener">
+                            <i class="footer-contact__icon icon fas fa-phone"></i>
                             <span>(11) 0000-0000</span>
                         </a>
-                        <a href="mailto:contato@segurancamix.com.br" class="header-contact__item" target="_blank" rel="noopener">
-                            <i class="header-contact__icon icon fas fa-envelope"></i>
+                        <a href="mailto:contato@segurancamix.com.br" class="footer-contact__item" target="_blank" rel="noopener">
+                            <i class="footer-contact__icon icon fas fa-envelope"></i>
                             <span>contato@segurancamix.com.br</span>
                         </a>
-                        <a href="mailto:contato@segurancamix.com.br" class="header-contact__item" target="_blank" rel="noopener">
-                            <i class="header-contact__icon icon fas fa-map-marker-alt"></i>
+                        <a href="mailto:contato@segurancamix.com.br" class="footer-contact__item" target="_blank" rel="noopener">
+                            <i class="footer-contact__icon icon fas fa-map-marker-alt"></i>
                             <span>contato@segurancamix.com.br</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="header-contact__social social">
+                    <div class="footer-contact__social social">
                         <a href="" rel="noopener" target="_blank" class="social__item" title="Instagram">
                             <i class="social__icon icon fab fa-instagram"></i>
                         </a>
@@ -63,7 +63,7 @@
         </div>
     </section>
     <div class="footer__copyright">
-        <div class="container position-relative">
+        <div class="container info-footer">
             <span>© Plataformanet <?php echo Date('Y') ?> - Todos os direitos reservados</span>
             <span class="politica-privacidade">Política de privacidade</span>
         </div>
