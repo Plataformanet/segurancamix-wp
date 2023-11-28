@@ -388,18 +388,22 @@ ul.forEach((item) => {
     li_links.addEventListener('mouseover', (e) => {
           // mouseIsOver = true;
           const getKey = document.getElementById(`menu-${key}`).dataset.key;
-          console.log(e);
           document.getElementById(`menu-${key}`).className = `megamenu-subcategories menu-${key}`;
           // document.getElementsByClassName(`menu-${key}`).style = 'display: block';
           // link.style = "display: block"; 
-          if(getKey == key){
             $(`.menu-${key}`).css('display','block');
-            console.log('Entrou no If');
-          }else{
-            $(`.menu-${key}`).css('display','none');
-            console.log('Entrou no Else');
-          }  
+           
        });
+
        $(`.menu-${key}`).css('display','none');  
+       
+       $(`.menu-${key}`).on('mouseleave', function () {
+         $(`.menu-${key}`).css('display','none');  
+      });
+
+       $(`#produtos`).on('mouseleave', function () {
+         $(`.menu-${key}`).css('display','none');  
+      });
   });
 });
+

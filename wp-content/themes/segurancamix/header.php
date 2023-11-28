@@ -56,7 +56,7 @@
                                 <div class="header-nav__icon-bar header-nav__icon-bar--2"></div>
                                 <div class="header-nav__icon-bar header-nav__icon-bar--3"></div>
                             </div>
-                            <span>Menu</span>
+                            <!-- <span>Menu</span> -->
                         </div>
                     </div>
                     <div class="nav_menu_principal">
@@ -73,13 +73,13 @@
                                                 <li id="link-menu-0">
                                                     <a href="#">Fechadura digital</a>
                                                 </li>
-                                                <li id="link-menu-1">
+                                                <!-- <li id="link-menu-1">
                                                     <a href="#">Vidros</a>
-                                                </li>
-                                                <li id="link-menu-2">
+                                                </li> -->
+                                                <li id="link-menu-1">
                                                     <a href="#">Portas</a>
                                                 </li>
-                                                <li id="link-menu-3">
+                                                <!-- <li id="link-menu-3">
                                                     <a href="#">Passa-volumes</a>
                                                 </li>
                                                 <li id="link-menu-4">
@@ -90,7 +90,7 @@
                                                 </li>
                                                 <li id="link-menu-6">
                                                     <a href="#">Blindagem de alvenaria</a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="megamenu-subcategories menu-0" id="menu-0" data-key="0">
@@ -104,7 +104,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="megamenu-subcategories menu-2" id="menu-2" data-key="2">
+                                        <div class="megamenu-subcategories menu-1" id="menu-1" data-key="1">
                                             <span class="megamenu-subcategories__title">Subcategorias</span>
                                             <ul class="megamenu-subcategories__list">
                                                 <li>

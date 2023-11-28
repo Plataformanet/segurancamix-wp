@@ -47,6 +47,10 @@ header {
     display: flex;
 }
 
+.header-nav {
+    margin: 0 0 5rem 0;
+}
+
 .header-contact {
     background-color: #000;
     overflow: hidden;
@@ -210,8 +214,9 @@ header {
 .header-nav__icon {
     position: relative;
     width: 5rem;
-    height: 5rem;
+    height: 4rem;
     border-radius: 50%;
+    top: 2rem;
 }
 
 .header-nav__icon-bar {
@@ -306,7 +311,7 @@ header {
 }
 
 .megamenu-categories__list li {
-    padding: 0 0 0 4rem;
+    padding: 0 0 2rem 4rem;
     list-style: none;
 }
 
@@ -688,6 +693,7 @@ header {
 
 .ouvidoria {
     background-color: #fff;
+    overflow: hidden;
 }
 
 .ouvidoria h2 {
@@ -719,7 +725,7 @@ header {
 
 .home-certificados__carousel.owl-carousel {
     position: relative;
-    top: 17rem;
+    top: 10rem;
 }
 
 @media (max-width: 1199px) {
@@ -1613,18 +1619,56 @@ footer {
     display: none;
 }
 
+footer .wpforms-form {
+    display: flex;
+}
+
+footer div.wpforms-container-full .wpforms-form button[type=submit] {
+    display: block;
+    margin: auto !important;
+    background: none !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    padding: 0.5rem 1.5rem !important;
+}
+
+
+footer div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+    display: block;
+    margin: auto !important;
+    background: #fff !important;
+    color: #000 !important;
+    padding: 0.5rem 1.5rem !important;
+}
+
+footer div.wpforms-container-full .wpforms-form input[type=email] {
+    background-color: #fff !important;
+    width: 45rem;
+    padding: 2rem;
+}
+
+footer div.wpforms-container-full {
+    margin: 0;
+}
+
 @media (max-width: 575px) {
 
     .logo-topo {
         display: flex;
+        margin: 0 !important;
     }
 
     .logo-topo img {
         width: 100%;
     }
 
+
     .header-nav {
-        top: unset;
+        top: unset !important;
+    }
+
+    .header-nav__icon {
+        top: 2rem !important;
     }
 
     .header-nav__list li {
@@ -1633,6 +1677,18 @@ footer {
 
     .header-nav__list li a {
         color: #fff;
+    }
+
+    .header-nav__btn {
+        bottom: 0 !important;
+    }
+
+    .header-nav__icon {
+        position: relative;
+        width: 5rem;
+        height: 4rem;
+        border-radius: 50%;
+        top: 2rem;
     }
 
     .home-sobre__nos img {
@@ -1646,7 +1702,7 @@ footer {
 
     .home-certificados__carousel.owl-carousel {
         position: relative;
-        top: 1rem;
+        top: 1rem !important;
     }
 
     .certificados p, .produtos p, .projetos p, .nossos-cliente p, .confira-blog p {
@@ -1663,9 +1719,33 @@ footer {
         margin: 3rem 0 0 0;
     }
 
+    .produtos button {
+        margin: auto !important;
+    }
+
+    .clientes-item img {
+        margin: auto !important;
+    }
+
     .info-rodape img {
         display: block;
         margin: auto;
+    }
+
+    .home-fale_conosco {
+        display: block;
+    }
+
+    .home-fale_conosco p {
+        font-size: 2rem !important;
+    }
+
+    footer div.wpforms-container-full .wpforms-form input[type=email] {
+        width: 25rem !important;
+    }
+
+    footer div.wpforms-container-full .wpforms-form button[type=submit] {
+        padding: 0.7rem 1.5rem !important;
     }
 
     .footer-contact__content {
@@ -1717,14 +1797,18 @@ footer {
         margin: 1rem 0 1rem 0;
         min-height: 35rem;
     }
+
+    .footer-contact__item {
+        font-size: 1.6rem !important;
+    }
+
+    .ouvidoria-contact__item {
+        font-size: 1.6rem !important;
+    }
 }
 
 
 @media (max-width: 991px) {
-
-    .logo-topo {
-        margin: 0 0 -7rem 0;
-    }
 
     .header-nav {
         position: absolute;
@@ -1760,9 +1844,9 @@ footer {
         width: 100%;
     }
 
-    .produtos, .projetos, .nossos-cliente, .confira-blog, .trabalhe-conosco, .orcamento {
+    /* .produtos, .projetos, .nossos-cliente, .confira-blog, .trabalhe-conosco, .orcamento {
         margin: 0;
-    }
+    } */
 
     .clientes-item img {
         filter: grayscale(1);
@@ -1806,11 +1890,11 @@ footer {
     }
 
     .produtos p, .certificados p {
-        padding-right: 0 !important;
+        padding-right: 0;
     }
 
     .home-certificados__carousel.owl-carousel {
-        top: 7rem !important;
+        top: 7rem;
     }
 
     .tab-produto .nav-tabs .nav-link {
@@ -1831,23 +1915,64 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
+    .logo-topo {
+        display: flex;
+    }
+
+    .header-nav__icon {
+        top: 10rem;
+    }
+
     .produtos p {
         padding: 0;
     }
 
     .conteudo-produto {
         position: absolute;
-        bottom: 0;
+        bottom: 6rem;
     }
 
     .tab-produto .nav-tabs .nav-link {
         padding: 1rem 9rem;
-        width: 95rem !important;
+        width: 70rem !important;
     }
 
     .info-banner__showroom p {
         font-size: 3rem;
     }
+
+    .home-certificados__carousel.owl-carousel {
+        top: 10rem;
+    }
+
+    .info-footer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer-contact__item {
+        font-size: 1.3rem;
+    }
+
+    .ouvidoria-contact__item {
+        font-size: 1.3rem;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .home-fale_conosco p {
+        font-size: 2.8rem;
+        padding: 1rem 0 0 0;
+    }
+
+    footer div.wpforms-container-full .wpforms-form input[type=email] {
+        background-color: #fff !important;
+        width: 25rem;
+    }
+
 }
 
 @media (max-width: 1366px) {
@@ -1868,4 +1993,9 @@ footer {
         padding: 1rem 9rem;
         width: 37rem;
     }
+
+    /* .home-certificados__carousel.owl-carousel {
+        position: relative;
+        top: 17rem;
+    } */
 }

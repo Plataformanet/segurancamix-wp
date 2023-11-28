@@ -1,9 +1,10 @@
 <footer>
     <section class="home-fale_conosco">
-        <p>Fale conosco, solicite orçamento.</p>
-        <button class="home-btn__solicitar_orcamento">
+        <p>Receba as nossas novidades!</p>
+        <!-- <button class="home-btn__solicitar_orcamento">
             <a href="http://">SOLICITAR ORÇAMENTO</a>
-        </button>
+        </button> -->
+        <?php echo do_shortcode('[wpforms id="60"]'); ?>
     </section>
     <section class="info-rodape">
         <div class="container">
