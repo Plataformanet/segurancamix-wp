@@ -31,19 +31,20 @@ a, p {
     font-weight: 600;
 }
 
-main>div:first-child {
+/* main>div:first-child {
     position: relative;
     z-index: 1;
-}
+} */
 
-header {
-    /* position: fixed;
+.header {
     width: 100%;
-    z-index: 10;
-    background-color: #fff; */
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #fff;
 }
 
-.header-main {
+.header-main, .header-main__fixed {
     display: flex;
 }
 
@@ -134,11 +135,21 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
 }
 
-.header-nav__list li a {
+.header-nav__list--fixed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-nav__list li a, .header-nav__list--fixed li a {
     display: inline-block;
     position: relative;
     color: #000;
@@ -148,7 +159,7 @@ header {
 }
 
 
-.header-nav__list li a::before {
+.header-nav__list li a::before, .header-nav__list--fixed li a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -160,21 +171,21 @@ header {
     transition: all 0.4s ease-in-out;
 }
 
-.header-nav__list li a:hover {
+.header-nav__list li a:hover, .header-nav__list--fixed li a:hover {
     font-weight: 500;
 }
 
-.header-nav__list li a:hover::before {
+.header-nav__list li a:hover::before, .header-nav__list--fixed li a::before {
     width: 100%;
     right: auto;
     left: 0;
 }
 
-.header-nav__list li.current-menu-item a {
+.header-nav__list li.current-menu-item a, .header-nav__list--fixed li.current-menu-item a {
     font-weight: 500;
 }
 
-.header-nav__list li.current-menu-item a::before {
+.header-nav__list li.current-menu-item a::before, .header-nav__list--fixed li.current-menu-item a::before {
     width: 100%;
     right: auto;
     left: 0;
@@ -269,11 +280,25 @@ header {
 }
 
 
-.megamenu {
+/* .megamenu {
     position: absolute;
     left: 0;
     top: 100%;
     width: 100%;
+    z-index: 5;
+    background-color: #fff;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
+} */
+
+.megamenu {
+    position: absolute;
+    left: 28%;
+    top: 100%;
+    width: 49%;
     z-index: 5;
     background-color: #fff;
     display: flex;
@@ -424,6 +449,10 @@ header {
     max-width: 100%;
     margin: auto;
     padding: 40px;
+}
+
+.home-banner {
+    margin-top: 21rem;
 }
 
 .banner-image {
@@ -1691,6 +1720,10 @@ footer div.wpforms-container-full {
         top: 2rem;
     }
 
+    .home-sobre__nos {
+        margin: 15rem 0 0 0;
+    }
+
     .home-sobre__nos img {
         border-right: 20px solid #292929;
         border-bottom: 20px solid #292929;
@@ -1977,7 +2010,7 @@ footer div.wpforms-container-full {
 
 @media (max-width: 1366px) {
     .header-nav__list li a {
-        padding: 0 0.5rem;
+        /* padding: 0 0.5rem; */
     }
 
     .certificados-item:hover .wrapper-btn {

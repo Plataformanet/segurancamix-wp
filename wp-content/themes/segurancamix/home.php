@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="home-banner">
+<section class="home-banner d-none d-md-block">
     <?
     $args = array(
         'post_type' => 'banners'

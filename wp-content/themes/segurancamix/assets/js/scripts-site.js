@@ -11,6 +11,23 @@
   });
 }
 
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if(scroll >= 450){
+    document.getElementById("header").classList.remove('row');
+    document.getElementById("header-nav").classList.remove('header-nav')
+    document.getElementById("header-nav").classList.add('header-nav__fixed');
+    document.getElementById("menu_list").classList.remove('header-nav__list')
+    document.getElementById("menu_list").classList.add('header-nav__list--fixed');
+  }else{
+    document.getElementById("header").classList.add('row');
+    document.getElementById("header-nav").classList.add('header-nav')
+    document.getElementById("header-nav").classList.remove('header-nav__fixed');
+    document.getElementById("menu_list").classList.add('header-nav__list')
+    document.getElementById("menu_list").classList.remove('header-nav__list--fixed');
+  }
+});
+
 // Padding Left Adjustment
 
 const paddingLeftAdjustment = () => {
