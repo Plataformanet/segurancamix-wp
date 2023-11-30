@@ -48,6 +48,10 @@ a, p {
     display: flex;
 }
 
+.header-main__fixed {
+    justify-content: space-evenly;
+}
+
 .header-nav {
     margin: 0 0 5rem 0;
 }
@@ -145,7 +149,7 @@ a, p {
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -175,7 +179,7 @@ a, p {
     font-weight: 500;
 }
 
-.header-nav__list li a:hover::before, .header-nav__list--fixed li a::before {
+.header-nav__list li a:hover::before, .header-nav__list--fixed li a:hover::before {
     width: 100%;
     right: auto;
     left: 0;
@@ -183,12 +187,6 @@ a, p {
 
 .header-nav__list li.current-menu-item a, .header-nav__list--fixed li.current-menu-item a {
     font-weight: 500;
-}
-
-.header-nav__list li.current-menu-item a::before, .header-nav__list--fixed li.current-menu-item a::before {
-    width: 100%;
-    right: auto;
-    left: 0;
 }
 
 .header-nav__item:last-child {
@@ -308,7 +306,20 @@ a, p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
 }
 
-.main-nav__list>li:hover .megamenu {
+.megamenu-fixed {
+    position: absolute;
+    top: 100%;
+    width: 82%;
+    z-index: 5;
+    background-color: #fff;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
+}
+
+.main-nav__list>li:hover .megamenu, .main-nav__list>li:hover .megamenu-fixed {
     opacity: 1;
     visibility: visible;
 }
@@ -353,7 +364,7 @@ a, p {
 
 .megamenu-subcategories {
     padding: 0 0 0 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: stretch;
     background-color: #fff;
@@ -754,7 +765,8 @@ a, p {
 
 .home-certificados__carousel.owl-carousel {
     position: relative;
-    top: 10rem;
+    /* top: 10rem; */
+    transform: translateY(3rem);
 }
 
 @media (max-width: 1199px) {
@@ -1688,7 +1700,7 @@ footer div.wpforms-container-full {
     }
 
     .logo-topo img {
-        width: 100%;
+        width: 85%;
     }
 
 
@@ -2031,4 +2043,8 @@ footer div.wpforms-container-full {
         position: relative;
         top: 17rem;
     } */
+
+    .home-certificados__carousel.owl-carousel {
+        top: 5rem;
+    }
 }

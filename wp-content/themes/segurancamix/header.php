@@ -67,7 +67,7 @@
                             <li class="header-nav__item"><a href="<?php echo get_page_link(10); ?>">Sobre nós</a></li>
                             <li class="header-nav__item" id="produtos">
                                 <a href="<?php echo get_page_link(12); ?>">Produtos</a>
-                                <div class="megamenu">
+                                <div class="megamenu" id="megamenu">
                                     <div class="megamenu-categories">
                                         <span class="megamenu-categories__title">Categorias</span>
                                         <ul class="megamenu-categories__list" id="list_cat">
@@ -127,28 +127,8 @@
                         </ul>
                     </nav>
                 </div>
-
-
-                <!-- 
-                            <div class="row nav_menu_principal">
-                                <div class="container">
-                                    <div class="col-md-12">
-                                        <? wp_nav_menu(
-                                            array(
-                                                'theme_location' => 'my_main_menu',
-                                                'container' => 'nav',
-                                                'container_class' => 'header-nav',
-                                                'menu_class' => 'header-nav__list'
-                                            )
-                                        );
-                                        ?>
-                                    </div>
-                                </div>
-                            </div> -->
             </div>
-
         </div>
-
     </header>
     <a href="" class="fixed-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
         <i class="fab fa-whatsapp"></i>

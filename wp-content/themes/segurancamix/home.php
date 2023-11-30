@@ -62,7 +62,7 @@ get_header();
                     <a href="http://">VER TODOS</a>
                 </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex align-items-end">
                 <div class="home-certificados__carousel owl-carousel owl-theme">
                     <a href="" class="certificados-item">
                         <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
