@@ -17,66 +17,30 @@ get_header();
         <div class="row lista-blog">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
+                    <?php
+                    $args = array(
+                        'post_type' => 'blog',
+                        'orderby' => 'date',
+                        'order' => 'desc',
+                    );
+                    $query_blog = new WP_Query($args);
+
+                    while ($query_blog->have_posts()) {
+                        $query_blog->the_post();
+                    ?>
+                        <div class="col-md-4">
+                            <div class="blog-item">
+                                <a href="<?php the_permalink(); ?>">
+                                    <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+                                    <h2><?php the_title(); ?></h2>
+                                    <p><?php the_excerpt(); ?></p>
+                                    <button id="home-blog_carousel__btn">SAIBA MAIS</button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                                <h2>Normas que a empresa deve seguir</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                            </a>
-                        </div>
-                    </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

@@ -409,28 +409,25 @@ $(function () {
   $(".lb-prev, .lb-next, .lb-close, .lb-cancel").attr({ href: "#" });
 });
 
-const ul = document.querySelectorAll('#menu_list > li');
-
-ul.forEach((item) => {
-  const li = item.querySelectorAll('#list_cat > li');
+  const li = document.querySelectorAll('#list_cat > li');
   li.forEach((item, key) => {
     
     item.addEventListener('mouseover', (e) => {
-          document.getElementById(`menu-${key}`).className = `megamenu-subcategories menu-${key}`;
+          // document.getElementById(`menu-${key}`) .className = `megamenu-subcategories menu-${key}`;
            
-          
           document.querySelectorAll(`.megamenu-subcategories`).forEach((i) => {
             i.style.display = "none";
           });
           
-          $(`.menu-${key}`).css('display','block');
+          document.getElementsByClassName(`menu-${key}`)[0].style.display = "block";
            
        });
 
-       $(`#produtos`).on('mouseleave', function () {
-         $(`.menu-${key}`).css('display','none');  
+      const linkProduto = document.getElementById('produtos');
+
+      linkProduto.addEventListener('mouseleave', () => {
+        document.getElementsByClassName(`menu-${key}`)[0].style.display = "none";
       });
   });
-});
 
 

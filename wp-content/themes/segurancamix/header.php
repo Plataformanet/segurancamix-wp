@@ -64,44 +64,50 @@
                     <nav class="header-nav" id="header-nav">
                         <ul class="header-nav__list main-nav__list" id="menu_list">
                             <li class="header-nav__item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(10); ?>">Sobre nós</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/sobre-nos">Sobre nós</a></li>
                             <li class="header-nav__item" id="produtos">
-                                <a href="<?php echo get_page_link(12); ?>">Produtos</a>
+                                <a href="<?php echo get_site_url() ?>/produtos">Produtos</a>
                                 <div class="megamenu" id="megamenu">
                                     <div class="megamenu-categories">
                                         <span class="megamenu-categories__title">Categorias</span>
                                         <ul class="megamenu-categories__list" id="list_cat">
                                             <li id="link-menu-0">
-                                                <a href="#">Fechadura digital</a>
+                                                <a href="#">Porta de Madeira</a>
                                             </li>
-                                            <!-- <li id="link-menu-1">
-                                                        <a href="#">Vidros</a>
-                                                    </li> -->
                                             <li id="link-menu-1">
-                                                <a href="#">Portas</a>
+                                                <a href="#">Porta de Vidro</a>
                                             </li>
-                                            <!-- <li id="link-menu-3">
-                                                        <a href="#">Passa-volumes</a>
-                                                    </li>
-                                                    <li id="link-menu-4">
-                                                        <a href="#">Porta documentos</a>
-                                                    </li>
-                                                    <li id="link-menu-5">
-                                                        <a href="#">Intercomunicador</a>
-                                                    </li>
-                                                    <li id="link-menu-6">
-                                                        <a href="#">Blindagem de alvenaria</a>
-                                                    </li> -->
+                                            <li id="link-menu-1">
+                                                <a href="#">Porta em Aço</a>
+                                            </li>
+                                            <li id="link-menu-3">
+                                                <a href="#">Porta de giro</a>
+                                            </li>
+                                            <li id="link-menu-4">
+                                                <a href="#">Porta Pivotante</a>
+                                            </li>
+                                            <li id="link-menu-5">
+                                                <a href="#">Porta de Correr</a>
+                                            </li>
+                                            <li id="link-menu-6">
+                                                <a href="#">Porta de giro Dupla</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="megamenu-subcategories menu-0" id="menu-0" data-key="0">
                                         <span class="megamenu-subcategories__title">Subcategorias</span>
                                         <ul class="megamenu-subcategories__list">
                                             <li>
-                                                <a href="#">Fechadura 01</a>
+                                                <a href="#">Porta de giro Padrão</a>
                                             </li>
                                             <li>
-                                                <a href="#">Fechadura 02</a>
+                                                <a href="#">Porta Pivotante</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta de Correr</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta de giro Dupla</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -109,21 +115,41 @@
                                         <span class="megamenu-subcategories__title">Subcategorias</span>
                                         <ul class="megamenu-subcategories__list">
                                             <li>
-                                                <a href="#">Porta blindada</a>
+                                                <a href="#">Porta de giro Padrãoo</a>
                                             </li>
                                             <li>
-                                                <a href="#">Porta Antiarrombamento</a>
+                                                <a href="#">Porta Pivotante</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta de Correr</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta de giro Dupla</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="megamenu-subcategories menu-3" id="menu-3" data-key="3">
+                                        <span class="megamenu-subcategories__title">Subcategorias</span>
+                                        <ul class="megamenu-subcategories__list">
+                                            <li>
+                                                <a href="#">Porta de Guarita</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta de Guarita com visor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Porta Padrão</a>
                                             </li>
                                         </ul>
                                     </div>
                             </li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(14); ?>">Showroom</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(16); ?>">Projetos</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(18); ?>">Trabalhe Conosco</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(20); ?>">Clientes</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(22); ?>">Blog</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(24); ?>">Contato</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_page_link(26); ?>">Orçamento</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/showroom">Showroom</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/projetos">Projetos</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/trabalhe-conosco">Trabalhe Conosco</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/clientes">Clientes</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/blog">Blog</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/contato">Contato</a></li>
+                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/orcamento">Orçamento</a></li>
                         </ul>
                     </nav>
                 </div>

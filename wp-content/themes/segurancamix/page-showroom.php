@@ -1,6 +1,8 @@
 <?php
 /* Template name: Showroom */
 get_header();
+$args = array('post_type' => 'showrooms');
+$query_showroom = new WP_Query($args);
 ?>
 
 <section class="showroom title">
@@ -16,36 +18,18 @@ get_header();
             <div class="bloco-showroom">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-01.png" alt="Segurança Mix">
-                            </a>
-                        </div>
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-02.png" alt="Segurança Mix">
-                            </a>
-                        </div>
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-03.png" alt="Segurança Mix">
-                            </a>
-                        </div>
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-01.png" alt="Segurança Mix">
-                            </a>
-                        </div>
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-02.png" alt="Segurança Mix">
-                            </a>
-                        </div>
-                        <div class="col-md-4 showroom-item">
-                            <a href="http://">
-                                <img src="<? bloginfo('template_url') ?>/assets/images/showroom-03.png" alt="Segurança Mix">
-                            </a>
-                        </div>
+                        <?php
+                        while ($query_showroom->have_posts()) {
+                            $query_showroom->the_post();
+                        ?>
+                            <div class="col-md-4 showroom-item">
+                                <a href="<?php the_post_thumbnail_url(); ?>" data-lightbox="product-gallery">
+                                    <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                                </a>
+                            </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
 

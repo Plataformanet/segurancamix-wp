@@ -38,7 +38,7 @@ get_header();
                         Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?
                     </p>
                     <button class="btn-sobre_nos">
-                        <a href="http://">SAIBA MAIS</a>
+                        <a href="<?php echo get_site_url() ?>/sobre-nos">SAIBA MAIS</a>
                     </button>
                 </div>
                 <div class="col-md-6">
@@ -63,43 +63,25 @@ get_header();
                 </button>
             </div>
             <div class="col-md-6 d-flex align-items-end">
+                <?php
+                $args = array('post_type' => 'certificados');
+                $query_certificados = new WP_Query($args);
+                ?>
                 <div class="home-certificados__carousel owl-carousel owl-theme">
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
+                    <?
+                    while ($query_certificados->have_posts()) {
+                        $query_certificados->the_post();
+                    ?>
+                        <a href="" class="certificados-item">
+                            <img src="<? the_post_thumbnail_url() ?>" alt="<? the_title(); ?>">
+                            <div class="wrapper-btn">
+                                <button>SAIBA MAIS</button>
+                            </div>
+                        </a>
+                    <?
+                    }
+                    wp_reset_query();
+                    ?>
                 </div>
             </div>
         </div>
@@ -116,47 +98,38 @@ get_header();
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
                 </p>
                 <button class="btn-sobre_nos">
-                    <a href="http://">SAIBA MAIS</a>
+                    <a href="<?php echo get_site_url() ?>/produtos">SAIBA MAIS</a>
                 </button>
             </div>
             <div class="col-md-8">
+                <?php
+                $args = array(
+                    'post_type' => 'produtos',
+                    'orderby' => 'date',
+                    'order' => 'asc',
+                    'posts_per_page' => 4
+                );
+                $query_produtos = new WP_Query($args);
+                ?>
                 <div class="home-produtos__carousel owl-carousel owl-theme">
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-porta-blindada.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Porta-Blindada.png" alt="Segurança Mix">
-                            <h2>Porta blindada</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-vidro-blindado.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Vidro-Blindado.png" alt="Segurança Mix">
-                            <h2>Vidro blindado</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-fechadura.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Fechadura.png" alt="Segurança Mix">
-                            <h2>Fechadura de segurança</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="produtos-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/produto-guarita.png" alt="Segurança Mix">
-                        <div class="conteudo-produto">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Guarita.png" alt="Segurança Mix">
-                            <h2>Guarita blindada</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab</p>
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
+                    <?php
+                    while ($query_produtos->have_posts()) {
+                        global $post;
+                        $query_produtos->the_post();
+                        $term_obj_list = get_the_terms($post->ID, 'categoria-produtos');
+                    ?>
+                        <a href="<?php echo the_permalink(); ?>" class="produtos-item">
+                            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            <div class="conteudo-produto">
+                                <img src="<?php echo get_field('icone', 'categoria-produtos_' . $term_obj_list[0]->term_id); ?>" alt="Icone representando o produto">
+                                <h2><?php the_title(); ?></h2>
+                                <p><?php echo get_field('breve_descricao', $query_produtos->ID()); ?></p>
+                                <button>SAIBA MAIS</button>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -178,35 +151,52 @@ get_header();
     <div class="carrousel-projetos">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 projetos_comerciais">
-                    <h2>Projetos residenciais</h2>
-                    <div class="projetos__carousel">
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Residencial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2023</p>
-                            <div class="wrapper-btn">
-                                <!-- <button>SAIBA MAIS</button> -->
-                            </div>
-                        </a>
+                <?php
+                $args = array(
+                    'post_type' => 'projetos',
+                    'orderby' => 'date',
+                    'order' => 'desc',
+                    'posts_per_page' => 2,
+                );
+                $query_projetos = new WP_Query($args);
+                ?>
+                <?php
+                while ($query_projetos->have_posts()) {
+                    global $post;
+                    $query_projetos->the_post();
+                    $term_obj_list = get_the_terms($post->ID, 'categoria-projetos');
+                ?>
+                    <div class="col-md-6 projetos_comerciais">
+                        <?php
+                        foreach ($term_obj_list as $term_obj) {
+                        ?>
+                            <h2><?php echo $term_obj->name ?></h2>
+                        <?php
+                        }
+                        ?>
+
+                        <div class="projetos__carousel">
+                            <a href="<?php the_permalink(); ?>" class="projetos-item">
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php echo the_title(); ?>">
+                                <p><?php echo the_title(); ?></p>
+                                <div class="wrapper-btn">
+                                    <!-- <button>SAIBA MAIS</button> -->
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 projetos_residenciais">
-                    <h2>Projetos comerciais</h2>
-                    <div class="projetos__carousel">
-                        <a href="" class="projetos-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Projeto-Comercial.png" alt="Segurança Mix">
-                            <p>Projeto Lorem ipsum - 2023</p>
-                            <div class="wrapper-btn">
-                                <!-- <button>SAIBA MAIS</button> -->
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- <button class="btn-carrousel_projetos">
+                <?php
+                }
+                ?>
+            </div>
+            </a>
+        </div>
+    </div>
+    <!-- <button class="btn-carrousel_projetos">
                     <a href="http://">VER TODOS</a>
                 </button> -->
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 </section>
 
@@ -221,22 +211,18 @@ get_header();
                 </p>
                 <div class="col-md-12">
                     <div class="nossos-clientes__carousel owl-carousel owl-theme">
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
-                        </a>
-                        <a href="" class="clientes-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Icone-Cliente-Colorido.png" alt="Clientes">
-                        </a>
-                        </a>
+                        <?php
+                        $args = array('post_type' => 'clientes');
+                        $query_clientes = new WP_Query($args);
+                        while ($query_clientes->have_posts()) {
+                            $query_clientes->the_post();
+                        ?>
+                            <a href="<?php echo get_site_url() ?>/nossos-clientes" class="clientes-item">
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </a>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -254,25 +240,28 @@ get_header();
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
                 </p>
                 <div class="col-md-12">
+                    <?php
+                    $args = array(
+                        'post_type' => 'blog',
+                        'orderby' => 'date',
+                        'order' => 'desc',
+                    );
+                    $query_blog = new WP_Query($args);
+                    ?>
                     <div class="home-blog__carousel owl-carousel owl-theme">
-                        <a href="" class="blog-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                            <h2>Normas que a empresa deve seguir</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                        </a>
-                        <a href="" class="blog-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix" />
-                            <h2>Normas que a empresa deve seguir</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                        </a>
-                        <a href="" class="blog-item">
-                            <img src="<? bloginfo('template_url') ?>/assets/images/Imagem-Blog.png" alt="Segurança Mix">
-                            <h2>Normas que a empresa deve seguir</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo</p>
-                            <button id="home-blog_carousel__btn">SAIBA MAIS</button>
-                        </a>
+                        <?php
+                        while ($query_blog->have_posts()) {
+                            $query_blog->the_post();
+                        ?>
+                            <a href="<?php the_permalink(); ?>" class="blog-item">
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+                                <h2><?php the_title(); ?></h2>
+                                <p><?php the_excerpt(); ?></p>
+                                <button id="home-blog_carousel__btn">SAIBA MAIS</button>
+                            </a>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
