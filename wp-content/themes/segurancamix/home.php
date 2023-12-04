@@ -88,7 +88,7 @@ get_header();
     </div>
 </section>
 
-<section class="produtos title">
+<section class="home-produtos title">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -136,7 +136,7 @@ get_header();
     </div>
 </section>
 
-<section class="projetos title">
+<section class="home-projetos title">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

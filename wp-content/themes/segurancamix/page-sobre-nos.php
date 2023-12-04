@@ -50,49 +50,32 @@ get_header();
                     <a href="http://">VER TODOS</a>
                 </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex align-items-end">
+                <?php
+                $args = array('post_type' => 'certificados');
+                $query_certificados = new WP_Query($args);
+                ?>
                 <div class="home-certificados__carousel owl-carousel owl-theme">
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                        <div class="wrapper-btn">
-                            <button>SAIBA MAIS</button>
-                        </div>
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
-                    <a href="" class="certificados-item">
-                        <img src="<? bloginfo('template_url') ?>/assets/images/certificado-sem-selecao.png" alt="Segurança Mix">
-                    </a>
+                    <?
+                    while ($query_certificados->have_posts()) {
+                        $query_certificados->the_post();
+                    ?>
+                        <a href="" class="certificados-item">
+                            <img src="<? the_post_thumbnail_url() ?>" alt="<? the_title(); ?>">
+                            <div class="wrapper-btn">
+                                <button>SAIBA MAIS</button>
+                            </div>
+                        </a>
+                    <?
+                    }
+                    wp_reset_query();
+                    ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <section class="nossos-cliente title">
     <div class="container">

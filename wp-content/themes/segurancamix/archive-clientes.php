@@ -1,5 +1,4 @@
 <?php
-/* Template name: Clientes */
 get_header();
 ?>
 

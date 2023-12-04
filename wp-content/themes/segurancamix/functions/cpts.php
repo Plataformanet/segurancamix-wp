@@ -120,7 +120,7 @@ function meus_posts_types()
             'has_archive' => true,
             'menu_icon' => 'dashicons-media-document',
             'supports' => array('title', 'thumbnail', 'editor'),
-            'rewrite' => array('slug' => 'noticia', 'with_front' => true)
+            // 'rewrite' => array('slug' => 'noticia', 'with_front' => true)
         )
     );
 
