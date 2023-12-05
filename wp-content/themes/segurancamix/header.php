@@ -66,82 +66,48 @@
                             <li class="header-nav__item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/sobre-nos">Sobre nós</a></li>
                             <li class="header-nav__item" id="produtos">
+                                <?php
+                                $parent_cat_arg = array('hide_empty' => false, 'parent' => 0);
+                                $parent_cat = get_terms('categoria-produtos', $parent_cat_arg);
+                                ?>
                                 <a href="<?php echo get_site_url() ?>/produtos">Produtos</a>
                                 <div class="megamenu" id="megamenu">
                                     <div class="megamenu-categories">
-                                        <span class="megamenu-categories__title">Categorias</span>
+                                        <!-- <span class="megamenu-categories__title">Categorias</span> -->
                                         <ul class="megamenu-categories__list" id="list_cat">
-                                            <li id="link-menu-0">
-                                                <a href="#">Porta de Madeira</a>
-                                            </li>
-                                            <li id="link-menu-1">
-                                                <a href="#">Porta de Vidro</a>
-                                            </li>
-                                            <li id="link-menu-1">
-                                                <a href="#">Porta em Aço</a>
-                                            </li>
-                                            <li id="link-menu-3">
-                                                <a href="#">Porta de giro</a>
-                                            </li>
-                                            <li id="link-menu-4">
-                                                <a href="#">Porta Pivotante</a>
-                                            </li>
-                                            <li id="link-menu-5">
-                                                <a href="#">Porta de Correr</a>
-                                            </li>
-                                            <li id="link-menu-6">
-                                                <a href="#">Porta de giro Dupla</a>
-                                            </li>
+                                            <?php
+                                            foreach ($parent_cat as $cat) {
+                                            ?>
+                                                <li>
+                                                    <a href="#"><?php echo $cat->name; ?></a>
+                                                </li>
+                                            <?php
+                                            }
+                                            ?>
                                         </ul>
                                     </div>
-                                    <div class="megamenu-subcategories menu-0" id="menu-0" data-key="0">
-                                        <span class="megamenu-subcategories__title">Subcategorias</span>
-                                        <ul class="megamenu-subcategories__list">
-                                            <li>
-                                                <a href="#">Porta de giro Padrão</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta Pivotante</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta de Correr</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta de giro Dupla</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="megamenu-subcategories menu-1" id="menu-1" data-key="1">
-                                        <span class="megamenu-subcategories__title">Subcategorias</span>
-                                        <ul class="megamenu-subcategories__list">
-                                            <li>
-                                                <a href="#">Porta de giro Padrãoo</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta Pivotante</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta de Correr</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta de giro Dupla</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="megamenu-subcategories menu-3" id="menu-3" data-key="3">
-                                        <span class="megamenu-subcategories__title">Subcategorias</span>
-                                        <ul class="megamenu-subcategories__list">
-                                            <li>
-                                                <a href="#">Porta de Guarita</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta de Guarita com visor</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Porta Padrão</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <?php
+                                    foreach ($parent_cat as $key => $catVal) {
+                                        $child_arg = array('hide_empty' => false, 'parent' => $catVal->term_id);
+                                        $child_cat = get_terms('categoria-produtos', $child_arg);
+                                    ?>
+                                        <div class="megamenu-subcategories menu-<?php echo $key; ?>" id="menu-<?php echo $key; ?>" data-key="<?php echo $key; ?>">
+                                            <!-- <span class="megamenu-subcategories__title">Subcategorias</span> -->
+                                            <ul class="megamenu-subcategories__list">
+                                                <?php
+                                                foreach ($child_cat as $child_term) {
+                                                ?>
+                                                    <li>
+                                                        <a href="#"><?php echo $child_term->name; ?></a>
+                                                    </li>
+                                                <?php
+                                                }
+                                                ?>
+                                            </ul>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
                             </li>
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/showroom">Showroom</a></li>
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/projetos">Projetos</a></li>

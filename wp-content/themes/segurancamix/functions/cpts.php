@@ -35,7 +35,6 @@ function meus_posts_types()
             'has_archive' => true,
             'menu_icon' => 'dashicons-hammer',
             'supports' => array('title', 'thumbnail', 'editor'),
-            'rewrite' => array('slug' => 'cadastrar-projeto', 'with_front' => true)
         )
     );
 
