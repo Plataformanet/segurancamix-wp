@@ -79,7 +79,7 @@
                                             foreach ($parent_cat as $cat) {
                                             ?>
                                                 <li>
-                                                    <a href="#"><?php echo $cat->name; ?></a>
+                                                    <a href="<?php echo get_term_link($cat->term_id, 'categoria-produtos'); ?>"><?php echo $cat->name; ?></a>
                                                 </li>
                                             <?php
                                             }
@@ -98,7 +98,7 @@
                                                 foreach ($child_cat as $child_term) {
                                                 ?>
                                                     <li>
-                                                        <a href="#"><?php echo $child_term->name; ?></a>
+                                                        <a href="<?php echo get_term_link($child_term->term_id, 'categoria-produtos'); ?>"><?php echo $child_term->name; ?></a>
                                                     </li>
                                                 <?php
                                                 }
@@ -122,7 +122,7 @@
             </div>
         </div>
     </header>
-    <a href="" class="fixed-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+    <a href="https://wa.me/5511000000" class="fixed-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     <main>

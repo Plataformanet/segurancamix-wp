@@ -5,7 +5,7 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
     </p>
     <button class="btn-certificados">
-        <a href="http://">VER TODOS</a>
+        <a href="<?php echo get_site_url() ?>/certificados">VER TODOS</a>
     </button>
 </div>
 <div class="col-md-6 d-flex align-items-end">
@@ -18,7 +18,7 @@
         while ($query_certificados->have_posts()) {
             $query_certificados->the_post();
         ?>
-            <a href="" class="certificados-item">
+            <a href="<?php echo get_site_url() ?>/certificados" class="certificados-item">
                 <img src="<? the_post_thumbnail_url() ?>" alt="<? the_title(); ?>">
                 <div class="wrapper-btn">
                     <button>SAIBA MAIS</button>

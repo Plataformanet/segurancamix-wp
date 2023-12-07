@@ -67,12 +67,12 @@ $galleries = get_field('galeria_de_imagens');
 
                         <div class="produto-btns">
                             <button class="btn-produto__solicitar_oracmento">
-                                <a href="http://">
+                                <a href="<?php echo get_site_url() ?>/orcamento">
                                     SOLICITAR ORÇAMENTO
                                 </a>
                             </button>
                             <button class="btn-produto__falar_especialista">
-                                <a href="http://">
+                                <a href="https://wa.me/5511000000" target="_blank" rel="noopener">
                                     FALAR COM ESPECIALISTA
                                 </a>
                             </button>

@@ -13,10 +13,13 @@ get_header();
 
     <?
     while ($query_banners->have_posts()) {
+        global $post;
         $query_banners->the_post();
     ?>
         <div class="banner-item">
-            <img src="<? the_post_thumbnail_url() ?>" alt="" class="banner-image">
+            <a href="<?php echo get_field('link', $post->ID) ?>">
+                <img src="<? the_post_thumbnail_url() ?>" alt="" class="banner-image">
+            </a>
         </div>
     <?
     }
@@ -90,7 +93,15 @@ get_header();
                         <a href="<?php echo the_permalink(); ?>" class="produtos-item">
                             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                             <div class="conteudo-produto">
-                                <img src="<?php echo get_field('icone', 'categoria-produtos_' . $term_obj_list[0]->term_id); ?>" alt="Icone representando o produto">
+                                <?php
+                                foreach ($term_obj_list as $term) {
+                                    if ($term->parent == 0) {
+                                ?>
+                                        <img src="<?php echo get_field('icone', 'categoria-produtos_' . $term->term_id); ?>" alt="Icone representando o produto">
+                                <?php
+                                    }
+                                }
+                                ?>
                                 <h2><?php the_title(); ?></h2>
                                 <p><?php echo get_field('breve_descricao', $query_produtos->ID()); ?></p>
                                 <button>SAIBA MAIS</button>
