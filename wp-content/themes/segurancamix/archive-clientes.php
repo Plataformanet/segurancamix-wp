@@ -17,7 +17,7 @@ get_header();
             <div class="col-md-12">
                 <div class="row">
                     <?php
-                    $args = array('post_type' => 'clientes');
+                    $args = array('post_type' => 'clientes', 'posts_per_page' => -1);
                     $query_clientes = new WP_Query($args);
                     while ($query_clientes->have_posts()) {
                         $query_clientes->the_post();

@@ -22,7 +22,7 @@
                             <div class="header-contact__content">
                                 <a href="tel:1145911709" class="header-contact__item" target="_blank" rel="noopener">
                                     <i class="header-contact__icon icon fas fa-phone"></i>
-                                    <span>(11) 0000-0000</span>
+                                    <span>(11) 2351-2762 / 2351-2716</span>
                                 </a>
                                 <div class="d-none d-md-block">
                                     <a href="mailto:contato@segurancamix.com.br" class="header-contact__item" target="_blank" rel="noopener">
@@ -91,31 +91,29 @@
                                         $child_arg = array('hide_empty' => false, 'parent' => $catVal->term_id);
                                         $child_cat = get_terms('categoria-produtos', $child_arg);
                                     ?>
-                                        <div class="megamenu-subcategories menu-<?php echo $key; ?>" id="menu-<?php echo $key; ?>" data-key="<?php echo $key; ?>">
-                                            <!-- <span class="megamenu-subcategories__title">Subcategorias</span> -->
-                                            <ul class="megamenu-subcategories__list">
-                                                <?php
-                                                foreach ($child_cat as $child_term) {
-                                                ?>
-                                                    <li>
-                                                        <a href="<?php echo get_term_link($child_term->term_id, 'categoria-produtos'); ?>"><?php echo $child_term->name; ?></a>
-                                                    </li>
-                                                <?php
-                                                }
-                                                ?>
-                                            </ul>
-                                        </div>
+                                        <?php
+                                        get_template_part(
+                                            'template/content',
+                                            'lista-subcategorias',
+                                            array(
+                                                'key' => $key,
+                                                'child_cat' => $child_cat,
+                                                'term_id' => $catVal->term_id
+                                            )
+                                        );
+                                        ?>
                                     <?php
                                     }
                                     ?>
                             </li>
-                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/showroom">Showroom</a></li>
+                            <!-- <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/showroom">Showroom</a></li> -->
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/projetos">Projetos</a></li>
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/trabalhe-conosco">Trabalhe Conosco</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/clientes">Clientes</a></li>
+                            <!-- <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/clientes">Clientes</a></li> -->
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/blog">Blog</a></li>
                             <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/contato">Contato</a></li>
-                            <li class="header-nav__item"><a href="<?php echo get_site_url() ?>/orcamento">Orçamento</a></li>
+                            <li class="header-nav__item nav-btn__orcamento"><a href="<?php echo get_site_url() ?>/orcamento">Orçamento</a></li>
+                            <li class="header-nav__item nav-btn__atendimento24h"><a href="https://wa.me/5511977262696">Atendimento 24h</a></li>
                         </ul>
                     </nav>
                 </div>

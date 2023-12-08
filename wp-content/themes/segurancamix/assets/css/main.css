@@ -177,6 +177,18 @@ a, p {
     transition: all 0.4s ease-in-out;
 }
 
+.header-nav__list li:last-child a::before, .header-nav__list--fixed li:last-child a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 0.4rem;
+    background-color: #a40716;
+    transition: all 0.4s ease-in-out;
+}
+
 .header-nav__list li a:hover, .header-nav__list--fixed li a:hover {
     font-weight: 500;
 }
@@ -191,14 +203,32 @@ a, p {
     font-weight: 500;
 }
 
-.header-nav__item:last-child {
+.nav-btn__orcamento {
     background-color: #000;
     border-radius: 0.6rem;
     padding: 0.5rem 0;
 }
 
-.header-nav__item:last-child a {
-    color: #fff;
+.nav-btn__orcamento a {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.nav-btn__atendimento24h {
+    background-color: #a40716;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+}
+
+.header-nav__list--fixed .nav-btn__atendimento24h {
+    background-color: #a40716;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+    margin-left: 1rem;
+}
+
+.nav-btn__atendimento24h a {
+    color: #fff !important;
     font-weight: 500;
 }
 
@@ -364,7 +394,7 @@ a, p {
     background-color: #fff;
 }
 
-.megamenu-subcategories {
+.megamenu-subcategories, .megamenu-subcategories-sub, .megamenu-subcategories-sub-sub {
     padding: 0 0 0 0;
     display: none;
     flex-direction: column;
@@ -1006,6 +1036,11 @@ a, p {
     position: relative;
 }
 
+.nossos-clientes__carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1199px) {
     .nossos-clientes__carousel.owl-carousel {
         padding: 0 4rem;
@@ -1339,6 +1374,12 @@ a, p {
 
 .lista-clientes .bloco-clientes {
     margin: 0 0 5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.lista-clientes .bloco-clientes img {
+    width: 100%;
 }
 
 .lista-blog .blog-item {
@@ -1446,13 +1487,14 @@ div.wpforms-container-full input[type=text], div.wpforms-container-full input[ty
     width: 3.2rem;
     height: 3.2rem;
     font-size: 1.4rem;
-    border: 2px solid #fff;
-    background-color: #fff;
+    border: 2px solid #000;
+    background-color: #000;
     border-radius: 50%;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 .product-main__gallery {

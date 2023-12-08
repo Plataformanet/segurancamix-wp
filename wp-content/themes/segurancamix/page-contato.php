@@ -18,17 +18,17 @@ get_header();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="info-contact__content">
-                                    <a href="tel:1145911709" class="info-contact__item" target="_blank" rel="noopener">
+                                    <a href="tel:551123512762" class="info-contact__item" target="_blank" rel="noopener">
                                         <i class="info-contact__icon icon fas fa-phone"></i>
-                                        <span>(11) 0000-0000</span>
+                                        <span>(11) 2351-2762 / 2351-2716</span>
                                     </a>
                                     <a href="mailto:contato@segurancamix.com.br" class="info-contact__item" target="_blank" rel="noopener">
                                         <i class="info-contact__icon icon fas fa-envelope"></i>
                                         <span>contato@segurancamix.com.br</span>
                                     </a>
-                                    <a href="mailto:contato@segurancamix.com.br" class="info-contact__item" target="_blank" rel="noopener">
+                                    <a href="https://maps.app.goo.gl/1Vk2ed1wY3b5Wmst8" class="info-contact__item" target="_blank" rel="noopener">
                                         <i class="info-contact__icon icon fas fa-map-marker-alt"></i>
-                                        <span>R. Eng. José Bueno Bicalho, 443 - Jardim Vergueiro (Sacoma)</span>
+                                        <span>R. Eng. José Bueno Bicalho, 443 - Jardim Vergueiro (Sacomã)</span>
                                     </a>
                                 </div>
                             </div>

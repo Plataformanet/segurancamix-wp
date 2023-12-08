@@ -199,7 +199,7 @@ get_header();
                         while ($query_clientes->have_posts()) {
                             $query_clientes->the_post();
                         ?>
-                            <a href="<?php echo get_site_url() ?>/nossos-clientes" class="clientes-item">
+                            <a href="<?php echo get_site_url() ?>/clientes" class="clientes-item">
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                             </a>
                         <?php
