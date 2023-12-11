@@ -11,32 +11,32 @@
   });
 }
 
-window.addEventListener("scroll", (event) => {
-  let scroll = this.scrollY;
-  if(scroll >= 250 && window.innerWidth >= 1366){
-    document.getElementById("header").classList.remove('row');
-    document.getElementById("header").classList.remove('header-main');
-    document.getElementById("header").classList.add('header-main__fixed');
-    document.getElementById("header").classList.add('container');
-    document.getElementById("header-nav").classList.remove('header-nav')
-    document.getElementById("header-nav").classList.add('header-nav__fixed');
-    document.getElementById("menu_list").classList.remove('header-nav__list')
-    document.getElementById("menu_list").classList.add('header-nav__list--fixed');
-    document.getElementById("megamenu").classList.remove('megamenu');
-    document.getElementById("megamenu").classList.add('megamenu-fixed');
-  }else{
-    document.getElementById("header").classList.add('row');
-    document.getElementById("header").classList.add('header-main');
-    document.getElementById("header").classList.remove('header-main__fixed');
-    document.getElementById("header").classList.remove('container');
-    document.getElementById("header-nav").classList.add('header-nav')
-    document.getElementById("header-nav").classList.remove('header-nav__fixed');
-    document.getElementById("menu_list").classList.add('header-nav__list')
-    document.getElementById("menu_list").classList.remove('header-nav__list--fixed');
-    document.getElementById("megamenu").classList.add('megamenu');
-    document.getElementById("megamenu").classList.remove('megamenu-fixed');
-  }
-});
+// window.addEventListener("scroll", (event) => {
+//   let scroll = this.scrollY;
+//   if(scroll >= 250 && window.innerWidth >= 1366){
+//     document.getElementById("header").classList.remove('row');
+//     document.getElementById("header").classList.remove('header-main');
+//     document.getElementById("header").classList.add('header-main__fixed');
+//     document.getElementById("header").classList.add('container');
+//     document.getElementById("header-nav").classList.remove('header-nav')
+//     document.getElementById("header-nav").classList.add('header-nav__fixed');
+//     document.getElementById("menu_list").classList.remove('header-nav__list')
+//     document.getElementById("menu_list").classList.add('header-nav__list--fixed');
+//     document.getElementById("megamenu").classList.remove('megamenu');
+//     document.getElementById("megamenu").classList.add('megamenu-fixed');
+//   }else{
+//     document.getElementById("header").classList.add('row');
+//     document.getElementById("header").classList.add('header-main');
+//     document.getElementById("header").classList.remove('header-main__fixed');
+//     document.getElementById("header").classList.remove('container');
+//     document.getElementById("header-nav").classList.add('header-nav')
+//     document.getElementById("header-nav").classList.remove('header-nav__fixed');
+//     document.getElementById("menu_list").classList.add('header-nav__list')
+//     document.getElementById("menu_list").classList.remove('header-nav__list--fixed');
+//     document.getElementById("megamenu").classList.add('megamenu');
+//     document.getElementById("megamenu").classList.remove('megamenu-fixed');
+//   }
+// });
 
 
 // Padding Left Adjustment
@@ -418,8 +418,10 @@ $(function () {
           document.querySelectorAll(`.megamenu-subcategories`).forEach((i) => {
             i.style.display = "none";
           });
-          
-          document.getElementsByClassName(`menu-${key}`)[0].style.display = "block";
+
+          const id_cat = item.dataset.id_cat;
+
+          document.getElementsByClassName(`menu-${id_cat}`)[0].style.display = "block";
 
           document.querySelectorAll(`.megamenu-subcategories-sub`).forEach((i) => {
             i.style.display = "none";
@@ -429,13 +431,13 @@ $(function () {
             i.style.display = "none";
           });
              
+          const linkProduto = document.getElementById('produtos');
+    
+          linkProduto.addEventListener('mouseleave', () => {
+            document.getElementsByClassName(`menu-${id_cat}`)[0].style.display = "none";
+          });
        });
 
-      const linkProduto = document.getElementById('produtos');
-
-      linkProduto.addEventListener('mouseleave', () => {
-        document.getElementsByClassName(`menu-${key}`)[0].style.display = "none";
-      });
   });
 
   const li_sub = document.querySelectorAll('#list_sub > li');
@@ -445,15 +447,17 @@ $(function () {
         document.querySelectorAll(`.megamenu-subcategories-sub`).forEach((i) => {
           i.style.display = "none";
         });
+
+        const id_sub = item.dataset.id_sub;
         
-        document.getElementsByClassName(`menu-sub-${key}`)[0].style.display = "block";
+        document.getElementsByClassName(`menu-sub-${id_sub}`)[0].style.display = "block";
     });  
     
     const linkProduto = document.getElementById('produtos');
 
-      linkProduto.addEventListener('mouseleave', () => {
-        document.getElementsByClassName(`menu-sub-${key}`)[0].style.display = "none";
-      });
+      // linkProduto.addEventListener('mouseleave', () => {
+      //   document.getElementsByClassName(`menu-sub-${key}`)[0].style.display = "none";
+      // });
   });
 
   const li_sub_sub = document.querySelectorAll('#list_sub_sub > li');
@@ -463,13 +467,15 @@ $(function () {
         document.querySelectorAll(`.megamenu-subcategories-sub-sub`).forEach((i) => {
           i.style.display = "none";
         });
+
+        const id_sub = item.dataset.id_sub;
         
-        document.getElementsByClassName(`menu-with__more_sub-${key}`)[0].style.display = "block";
+        document.getElementsByClassName(`menu-with__more_sub-${id_sub}`)[0].style.display = "block";
     });    
 
     const linkProduto = document.getElementById('produtos');
 
-      linkProduto.addEventListener('mouseleave', () => {
-        document.getElementsByClassName(`menu-with__more_sub-${key}`)[0].style.display = "none";
-      });
+      // linkProduto.addEventListener('mouseleave', () => {
+      //   document.getElementsByClassName(`menu-with__more_sub-${key}`)[0].style.display = "none";
+      // });
   });

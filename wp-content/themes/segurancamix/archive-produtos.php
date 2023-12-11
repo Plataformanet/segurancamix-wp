@@ -9,7 +9,12 @@ get_header();
                 <h2>Produtos</h2>
                 <h3>Nossos produtos</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                    A Segurança Mix é uma empresa especializada em blindagem arquitetônica, com o comprometimento em oferecer o que há de mais seguro atualmente no mercado.
+                    Na Segurança Mix, nossos produtos têm Garantia de 5 anos.
+                </p>
+                <p>
+                    Aos nossos clientes prezamos por confiança, credibilidade e respeito.
+                    Solicite sua cotação, estaremos a sua disposição.
                 </p>
             </div>
             <?php

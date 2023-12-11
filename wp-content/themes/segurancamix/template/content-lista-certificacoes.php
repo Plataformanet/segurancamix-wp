@@ -1,9 +1,7 @@
 <div class="col-md-6">
     <h2>Certificações</h2>
     <h3>Somos certificados</h3>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
-    </p>
+                    <p>A Segurança Mix é licenciada pelo Governo do Estado de São Paulo e pela Polícia Civil do Estado, para o armazenamento e uso de produtos químicos controlados, utilizados em blindagem. Assim, está certificado que nossa empresa cumpre com todas as normas de segurança estabelecidas pelo Decreto Estatual n° 6.911/35 e pelo Decreto Federal n° 3665/00.</p>
     <button class="btn-certificados">
         <a href="<?php echo get_site_url() ?>/certificados">VER TODOS</a>
     </button>

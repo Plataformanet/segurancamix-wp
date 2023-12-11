@@ -9,7 +9,7 @@ $term_obj_list = get_the_terms($post->ID, 'categoria-produtos');
             foreach ($term_obj_list as $term) {
                 if ($term->parent == 0) {
             ?>
-                    <img src="<?php echo get_field('icone', 'categoria-produtos_' . $term->term_id); ?>" alt="Icone representando o produto">
+                    <!-- <img src="<?php echo get_field('icone', 'categoria-produtos_' . $term->term_id); ?>" alt="Icone representando o produto"> -->
             <?php
                 }
             }

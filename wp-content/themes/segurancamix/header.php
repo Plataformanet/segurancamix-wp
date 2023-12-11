@@ -31,34 +31,34 @@
                                     </a>
                                 </div>
                                 <div class="header-contact__social social">
-                                    <a href="" rel="noopener" target="_blank" class="social__item" title="Facebook">
+                                    <a href="https://www.facebook.com/profile.php?id=100066742211796" rel="noopener" target="_blank" class="social__item" title="Facebook">
                                         <i class="social__icon icon fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="" rel="noopener" target="_blank" class="social__item" title="Instagram">
+                                    <a href="https://www.instagram.com/seguranca_mix/" rel="noopener" target="_blank" class="social__item" title="Instagram">
                                         <i class="social__icon icon fab fa-instagram"></i>
                                     </a>
-                                    <a href="" rel="noopener" target="_blank" class="social__item" title="LinkedIn">
+                                    <!-- <a href="https://www.linkedin.com/company/segurancamix/" rel="noopener" target="_blank" class="social__item" title="LinkedIn">
                                         <i class="social__icon icon fab fa-linkedin-in"></i>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row header-main align-items-center" id="header">
+            <div class="header-main" id="header">
                 <div class="logo-topo">
                     <a href="<? bloginfo('url'); ?>" title="Segurança Mix">
                         <img src="<? bloginfo('template_url') ?>/assets/images/logo.png" alt="Segurança Mix">
                     </a>
-                    <div class="header-nav__btn">
-                        <div class="header-nav__icon">
-                            <div class="header-nav__icon-bar header-nav__icon-bar--1"></div>
-                            <div class="header-nav__icon-bar header-nav__icon-bar--2"></div>
-                            <div class="header-nav__icon-bar header-nav__icon-bar--3"></div>
-                        </div>
-                        <!-- <span>Menu</span> -->
+                </div>
+                <div class="header-nav__btn">
+                    <div class="header-nav__icon">
+                        <div class="header-nav__icon-bar header-nav__icon-bar--1"></div>
+                        <div class="header-nav__icon-bar header-nav__icon-bar--2"></div>
+                        <div class="header-nav__icon-bar header-nav__icon-bar--3"></div>
                     </div>
+                    <!-- <span>Menu</span> -->
                 </div>
                 <div class="nav_menu_principal">
                     <nav class="header-nav" id="header-nav">
@@ -78,8 +78,8 @@
                                             <?php
                                             foreach ($parent_cat as $cat) {
                                             ?>
-                                                <li>
-                                                    <a href="<?php echo get_term_link($cat->term_id, 'categoria-produtos'); ?>"><?php echo $cat->name; ?></a>
+                                                <li data-id_cat=<?php echo $cat->term_id; ?>>
+                                                    <a href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a>
                                                 </li>
                                             <?php
                                             }
@@ -120,7 +120,7 @@
             </div>
         </div>
     </header>
-    <a href="https://wa.me/5511000000" class="fixed-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+    <a href="https://wa.me/5511977262696" class="fixed-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     <main>

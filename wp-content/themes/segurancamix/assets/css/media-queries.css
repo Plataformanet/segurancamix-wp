@@ -3,6 +3,7 @@
     .logo-topo {
         display: flex;
         margin: 0 !important;
+        width: unset !important;
     }
 
     .logo-topo img {
@@ -254,7 +255,7 @@
 
     .header-nav__btn {
         display: flex;
-        bottom: 7rem;
+        /* bottom: 7rem; */
     }
 
     .home-sobre__nos img {
@@ -291,6 +292,18 @@
 }
 
 @media (max-width: 912px) {
+
+    .header-main {
+        display: flex !important;
+        align-items: unset;
+        margin: 0 0 2rem 0;
+    }
+
+    .logo-topo {
+        margin: unset !important;
+        width: unset !important;
+    }
+
     .home-certificados__carousel.owl-carousel {
         /* top: 10rem; */
         transform: translateY(-15rem) !important;
@@ -312,13 +325,31 @@
 
 @media (max-width: 1024px) {
 
-    .logo-topo {
+
+    /* .logo-topo a {
         display: flex;
-        justify-content: center;
+        justify-content: center !important;
+    } */
+
+    .header-main {
+        display: block;
+        align-items: unset;
+        margin: 0 0 2rem 0;
+    }
+
+    .logo-topo a {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .logo-topo {
+        width: 40%;
+        margin: auto;
     }
 
     .logo-topo img {
-        width: 87%;
+        width: unset;
+        margin: unset;
     }
 
     .home-banner {
@@ -329,9 +360,9 @@
         gap: 1rem;
     }
 
-    .header-nav__icon {
+    /* .header-nav__icon {
         top: 10rem;
-    }
+    } */
 
     .produtos p {
         padding: 0;
@@ -397,6 +428,16 @@
 
     .header-main__fixed .logo-topo img {
         width: 100%;
+    }
+
+    .logo-topo a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .logo-topo img {
+        margin: 0 !important;
+        width: 77%;
     }
 
     .header-nav__list li a {

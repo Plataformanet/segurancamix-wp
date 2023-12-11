@@ -4,26 +4,34 @@ get_header();
 ?>
 
 <section class="home-banner d-none d-md-block">
-    <?
+    <?php
     $args = array(
-        'post_type' => 'banners'
+        'post_type' => 'banners',
+        'posts_per_page' => -1,
+        'order' => 'asc'
     );
-    $query_banners = new WP_Query($args);
-    ?>
 
-    <?
-    while ($query_banners->have_posts()) {
-        global $post;
-        $query_banners->the_post();
+    $banners = get_posts($args);
+    if (!empty($banners)) :
     ?>
-        <div class="banner-item">
-            <a href="<?php echo get_field('link', $post->ID) ?>">
-                <img src="<? the_post_thumbnail_url() ?>" alt="" class="banner-image">
-            </a>
-        </div>
-    <?
-    }
-    wp_reset_query();
+        <section class="banner">
+            <div class="banner__carousel owl-carousel owl-theme">
+                <?php
+                foreach ($banners as $post) :
+                    setup_postdata($post);
+                ?>
+                    <a href="<?php !empty(get_field('link')) ? print get_field('link') : print '#' ?>" class="banner__item">
+                        <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="banner__bg">
+                    </a>
+
+                <?php
+                    wp_reset_postdata();
+                endforeach;
+                ?>
+            </div>
+        </section>
+    <?php
+    endif;
     ?>
 </section>
 
@@ -31,20 +39,26 @@ get_header();
     <div class="container">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <h2>Sobre nós</h2>
                     <h3>Conheça a Segurança Mix</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
-                    </p>
-                    <p>
-                        Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?
-                    </p>
+                    <p><span dir="ltr">Atuando h&aacute; mais de 10 anos, a Seguran&ccedil;a Mix &eacute; uma empresa id&ocirc;nea com especializa&ccedil;&atilde;o em blindagem arquitet&ocirc;nica, focando na qualidade e no que h&aacute; de mais seguro no mercado atualmente.</span></p>
+
+                    <p><span dir="ltr">Comercializamos portas blindadas, guaritas blindadas, caixilhos blindados, passa-volumes, todos destinados aos segmentos p&uacute;blico e corporativo.</span></p>
+
+                    <!-- <p><span dir="ltr">Nossas portas s&atilde;o projetadas de chapas de liga especial bal&iacute;stico, oferecendo m&aacute;xima prote&ccedil;&atilde;o, desde em tentativas de arrombamentos at&eacute; disparos de armamentos de alto calibre.</span></p>
+
+                    <p><span dir="ltr">Trabalhamos com fechaduras de seguran&ccedil;a KESO. Marca de origem su&iacute;&ccedil;a com comercializa&ccedil;&atilde;o no Brasil h&aacute; 20 anos.</span></p>
+
+                    <p><span dir="ltr">As fechaduras de seguran&ccedil;a cont&ecirc;m at&eacute; 20 pontos de travamento e chaves computadorizadas com cart&atilde;o de seguran&ccedil;a, que permite fazer c&oacute;pias em lojas ou chaveiros credenciados KESO.</span></p>
+
+                    <p><span dir="ltr">Temos tamb&eacute;m cadeados em a&ccedil;o, dobradi&ccedil;as de seguran&ccedil;a em a&ccedil;o inox, cilindros de seguran&ccedil;a, entre outros.</span></p> -->
+
                     <button class="btn-sobre_nos">
                         <a href="<?php echo get_site_url() ?>/sobre-nos">SAIBA MAIS</a>
                     </button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img src="<? bloginfo('template_url') ?>/assets/images/imagem-empresa.png" alt="Conheça a Segurança Mix">
                 </div>
             </div>
@@ -67,7 +81,12 @@ get_header();
                 <h2>Produtos</h2>
                 <h3>Nossos produtos</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                    A Segurança Mix é uma empresa especializada em blindagem arquitetônica, com o comprometimento em oferecer o que há de mais seguro atualmente no mercado.
+                    Na Segurança Mix, nossos produtos têm Garantia de 5 anos.
+                </p>
+                <p>
+                    Aos nossos clientes prezamos por confiança, credibilidade e respeito.
+                    Solicite sua cotação, estaremos a sua disposição.
                 </p>
                 <button class="btn-sobre_nos">
                     <a href="<?php echo get_site_url() ?>/produtos">SAIBA MAIS</a>
@@ -194,7 +213,7 @@ get_header();
                 <div class="col-md-12">
                     <div class="nossos-clientes__carousel owl-carousel owl-theme">
                         <?php
-                        $args = array('post_type' => 'clientes');
+                        $args = array('post_type' => 'clientes', 'posts_per_page' => -1);
                         $query_clientes = new WP_Query($args);
                         while ($query_clientes->have_posts()) {
                             $query_clientes->the_post();
