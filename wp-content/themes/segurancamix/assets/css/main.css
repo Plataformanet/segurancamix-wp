@@ -558,11 +558,11 @@ a, p {
 }
 
 .banner .owl-dots .owl-dot:hover span {
-    background-color: #cdac67;
+    background-color: #a40716;
 }
 
 .banner .owl-dots .owl-dot.active span {
-    background-color: #cdac67;
+    background-color: #a40716;
 }
 
 .banner .owl-prev,
@@ -583,6 +583,7 @@ a, p {
 .banner .owl-nav {
     height: 0 !important;
     margin: 0 !important;
+    visibility: hidden;
 }
 
 .banner .owl-nav [class*=owl-] {
@@ -1009,6 +1010,12 @@ a, p {
     height: 100%;
 }
 
+.produtos-item .conteudo-produto {
+    position: absolute;
+    bottom: 7rem;
+    right: 0.6rem;
+}
+
 .conteudo-produto img {
     filter: brightness(100%) !important;
 }
@@ -1347,6 +1354,7 @@ a, p {
     display: block;
     position: relative;
     margin: 0 0 5rem 0;
+    height: 50rem;
 }
 
 .bloco-produtos .produtos-item img {
@@ -1355,7 +1363,7 @@ a, p {
 
 .bloco-produtos .conteudo-produto button {
     position: absolute;
-    right: 0.8rem;
+    /* right: 0.8rem; */
     border: none;
     background-color: #ededed;
     padding: 1rem 3rem 1rem 3rem;

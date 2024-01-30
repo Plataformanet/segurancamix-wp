@@ -24,9 +24,11 @@ get_header();
                     <div class="col-md-12">
                         <div class="row">
                             <?php
-                            while (have_posts()) {
+                            $args = array('post_type' => 'produtos', 'posts_per_page' => -1);
+                            $query_produtos = new WP_Query($args);
+                            while ($query_produtos->have_posts()) {
                                 global $post;
-                                the_post();
+                                $query_produtos->the_post();
                             ?>
                                 <?php get_template_part('template/content', 'lista-produtos'); ?>
                             <?php

@@ -177,7 +177,7 @@ $(function () {
     ],
     loop: false,
     margin: 80,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 7000,
     autoplayHoverPause: true,
     responsive: {

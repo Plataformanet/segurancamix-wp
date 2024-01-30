@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="header-contact__content">
-                                <a href="tel:1145911709" class="header-contact__item" target="_blank" rel="noopener">
+                                <a href="tel:1123512762" class="header-contact__item" target="_blank" rel="noopener">
                                     <i class="header-contact__icon icon fas fa-phone"></i>
                                     <span>(11) 2351-2762 / 2351-2716</span>
                                 </a>
