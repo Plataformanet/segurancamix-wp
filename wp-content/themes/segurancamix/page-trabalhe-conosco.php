@@ -10,7 +10,7 @@ get_header();
                 <h2>Trabalhe Conosco</h2>
                 <h3>Faça parte do nosso time</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                    Junte-se à nossa equipe dedicada! Estamos em busca de talentos para fazer parte do nosso time. Confira nossas oportunidades e envie sua candidatura hoje mesmo!
                 </p>
 
             </div>

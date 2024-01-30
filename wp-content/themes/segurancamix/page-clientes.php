@@ -10,7 +10,7 @@ get_header();
                 <h2>Clientes</h2>
                 <h3>Nossos clientes</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                   Marcas e empresas que confiam no trabalho da Segurança Mix.
                 </p>
             </div>
         </div>
@@ -18,7 +18,10 @@ get_header();
             <div class="col-md-12">
                 <div class="row">
                     <?php
-                    $args = array('post_type' => 'clientes');
+                    $args = array(
+                        'post_type' => 'clientes',
+                        'posts_per_page' => -1
+                    );
                     $query_clientes = new WP_Query($args);
                     while ($query_clientes->have_posts()) {
                         $query_clientes->the_post();

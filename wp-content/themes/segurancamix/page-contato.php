@@ -10,7 +10,7 @@ get_header();
                 <h2>Contato</h2>
                 <h3>Fale conosco</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                    Dúvidas ou sugestões? Estamos aqui para ajudar! Entre em contato conosco para uma resposta rápida e eficiente.
                 </p>
 
                 <div class="info-contact">

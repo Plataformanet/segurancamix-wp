@@ -9,9 +9,8 @@ get_header();
             <div class="col-md-12">
                 <h2>Projetos</h2>
                 <h3>O que já produzimos</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
-                </p>
+                <p>PROJETOS SEGUROS</p>
+                <p>Temos Consultores Experientes e Capacitados para elaboração de um projeto seguro e inteligente para sua casa, empresa e/ou condomínio.</p>
             </div>
         </div>
     </div>

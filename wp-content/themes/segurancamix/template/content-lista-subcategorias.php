@@ -7,7 +7,7 @@
         <!-- <span class="megamenu-subcategories__title">Subcategorias</span> -->
         <ul class="megamenu-subcategories__list" id="list_sub">
             <li data-id_sub="<?php echo $child_term->term_id; ?>">
-                <a href="<?php echo get_category_link($child_term->term_id); ?>"><?php echo $child_term->name; ?></a>
+                <a href="<?php echo get_term_link($child_term->term_id, 'categoria-produtos'); ?>"><?php echo $child_term->name; ?></a>
             </li>
         </ul>
     <?php
@@ -27,7 +27,7 @@ foreach ($args['child_cat'] as $key => $child_term) {
             foreach ($child_sub as $child__sub_term) {
             ?>
                 <li data-id_sub="<?php echo $child__sub_term->term_id; ?>">
-                    <a href="<?php echo get_category_link($child__sub_term->term_id); ?>"><?php echo $child__sub_term->name; ?></a>
+                    <a href="<?php echo get_term_link($child__sub_term->term_id, 'categoria-produtos'); ?>"><?php echo $child__sub_term->name; ?></a>
                 </li>
             <?php
             }
@@ -46,7 +46,7 @@ foreach ($args['child_cat'] as $key => $child_term) {
                 foreach ($child_sub_sub as $child__sub_sub_term) {
                 ?>
                     <li>
-                        <a href="<?php echo get_category_link($child__sub_sub_term->term_id); ?>"><?php echo $child__sub_sub_term->name; ?></a>
+                        <a href="<?php echo get_term_link($child__sub_sub_term->term_id, 'categoria-produtos'); ?>"><?php echo $child__sub_sub_term->name; ?></a>
                     </li>
                 <?php
                 }

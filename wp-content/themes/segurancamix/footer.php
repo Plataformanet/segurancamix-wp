@@ -36,9 +36,13 @@
                         <a href="https://www.facebook.com/profile.php?id=100066742211796" rel="noopener" target="_blank" class="social__item" title="Facebook">
                             <i class="social__icon icon fab fa-facebook-f"></i>
                         </a>
+                        
+                        <!--
                         <a href="https://www.linkedin.com/company/segurancamix/" rel="noopener" target="_blank" class="social__item" title="LinkedIn">
                             <i class="social__icon icon fab fa-linkedin-in"></i>
                         </a>
+                        -->
+                        
                     </div>
                 </div>
                 <div class="col-md-3">

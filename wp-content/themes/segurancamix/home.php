@@ -8,7 +8,6 @@ get_header();
     $args = array(
         'post_type' => 'banners',
         'posts_per_page' => -1,
-        'order' => 'asc'
     );
 
     $banners = get_posts($args);
@@ -142,9 +141,8 @@ get_header();
             <div class="col-md-12">
                 <h2>Projetos</h2>
                 <h3>O que já produzimos</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
-                </p>
+                <p>PROJETOS SEGUROS</p>
+                <p>Temos Consultores Experientes e Capacitados para elaboração de um projeto seguro e inteligente para sua casa, empresa e/ou condomínio.</p>
             </div>
         </div>
     </div>
@@ -208,7 +206,7 @@ get_header();
                 <h2>Clientes</h2>
                 <h3>Nossos clientes</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores. Minus magnam aliquid labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloremque ab, iure, inventore dicta, obcaecati labore explicabo nulla quasi natus dolores.
+                    Marcas e empresas que confiam no trabalho da Segurança Mix.
                 </p>
                 <div class="col-md-12">
                     <div class="nossos-clientes__carousel owl-carousel owl-theme">
